@@ -19,12 +19,12 @@ Tinfoil is an applet that is installed directly to a "modded" Nintendo Switch. T
 
 Please note down the following in order to make this as smooth as possible, as well as some pre-reqs:
 
-* RoMM Updated to [RomM 3.5.0](https://github.com/rommapp/romm/releases/tag/3.5.0)
+* RomM Updated to [RomM 3.5.0](https://github.com/rommapp/romm/releases/tag/3.5.0)
 * Add `DISABLE_DOWNLOAD_ENDPOINT_AUTH=true` to your docker compose and restart the containers.
-* URL Used to access RoMM
+* URL Used to access RomM
 	* This can either be http or https - The system will prefer local access though to avoid reverse proxy issues.
 * Feed URL: `/api/tinfoil/feed`
-* Authentication details used to login to the Main RoMM Instance. 
+* Authentication details used to login to the Main RomM Instance. 
 
 ## Configure 
 
