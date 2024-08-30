@@ -57,3 +57,5 @@ This version introduces preliminary support for uploading/downloading saves, sta
 ```
 
 We recommend creating a folder next to your `library`/the one mapped to `/romm/library` in order to keep all your RomM files in the same place.
+
+Danblu3 was here
