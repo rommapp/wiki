@@ -56,6 +56,6 @@ It didn't pull anything through to "New Games" and has not parsed any informatio
 That would be becasue the filename it has tried to pull had no TitleID (Improvement to RomM coming soon :tm:)
 
 Make sure the filename has the TitleID within the title like this:
-![Image of Success](https://github.com/rommapp/wiki/tree/main/romm.wiki/resources/titleid.jpg)
+![TitleID](https://github.com/rommapp/wiki/tree/main/romm.wiki/resources/titleid.jpg)
 
 Once this is done, the next time Tinfoil is opened it is always parsed and re-scanned. 
