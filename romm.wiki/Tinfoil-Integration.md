@@ -42,11 +42,12 @@ Now it's time to configure your switch - Please follow the steps, this will assu
 	- Title - Free text title, make it whatever you want.
 	- Enabled - Yes
 4. Press X to save 
-5. Now close out of Tinfoil and go back in, so it can scan the TitleIDs - if everything is correct you will have this custom motd
-
-![Image of Success](https://github.com/rommapp/wiki/tree/main/romm.wiki/resources/tinfoilscreen.jpg)
+5. Now close out of Tinfoil and go back in, so it can scan the TitleIDs - if everything is correct you will have this custom motd:
+" RomM Swithc Library"
 
 Now you will be able to see the files in "New Games" tab of Tinfoil OR you can access it within the "File Browser" section that you setup earlier.
+
+![Image of Tinfoil](https://github.com/rommapp/wiki/tree/main/romm.wiki/resources/tinfoilscreen.jpg)
 
 
 ## Additional 
