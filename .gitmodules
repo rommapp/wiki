@@ -1,0 +1,6 @@
+[submodule "romm/romm.wiki"]
+	path = romm/romm.wiki
+	url = https://github.com/rommapp/romm.wiki.git
+[submodule "romm.wiki"]
+	path = romm.wiki
+	url = https://github.com/rommapp/romm.wiki.git
