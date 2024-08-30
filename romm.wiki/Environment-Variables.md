@@ -24,4 +24,6 @@ This is a complete list of available environment variables; required variables a
 |SCHEDULED_UPDATE_SWITCH_TITLEDB_CRON|Cron expression for scheduled updating of Switch TitleDB||`"0 4 * * *"`|
 |ENABLE_SCHEDULED_UPDATE_MAME_XML|Enable scheduled updating of MAME XML index||`false`|
 |SCHEDULED_UPDATE_MAME_XML_CRON|Cron expression for scheduled updating of MAME XML||`"0 5 * * *"`|
+|DISABLE_EMULATOR_JS|Disables playing in browser with [EmulatorJS](https://github.com/rommapp/romm/wiki/EmulatorJS-Player)||`false`|
+|DISABLE_RUFFLE_RS|Disables playing flash games with [RuffleRS](https://github.com/rommapp/romm/wiki/RuffleRS-Player)||`false`|
 |TZ|Sets the timezone||`UTC`|
