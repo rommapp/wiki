@@ -37,7 +37,6 @@ Configure the required environment variables, ports and paths as per the [exampl
 > The network type must also be set to "Custom: romm"
 
 ![romm docker tab](https://github.com/user-attachments/assets/4c4210c2-ed00-4790-a945-65cbe33620b0)
-![romm environment variables](https://github.com/user-attachments/assets/cba26de1-d2c9-4fff-88d8-bc7701f0dd88)
 
 Apply the changes, then head to the `DOCKER` tab. You should see both containers in a running state, and can access RomM using the IP:PORT of the container (highlighted below).
 
