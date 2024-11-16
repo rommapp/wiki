@@ -12,7 +12,7 @@ You'll want to create a custom bridge-type network for both containers to commun
 
 ### MariaDB
 
-MariaDB is required to run RomM, so install it from the plugin registry. Both the [official](https://hub.docker.com/_/mariadb) and [linuxserver](https://github.com/linuxserver/docker-mariadb/pkgs/container/mariadb) versions are supported, but **the linuxserver version is preferred**.
+MariaDB is required to run RomM, so install it from the plugin registry. Only the [official](https://hub.docker.com/_/mariadb) and [linuxserver](https://github.com/linuxserver/docker-mariadb/pkgs/container/mariadb) versions are supported, but **the official version is preferred**.
 
 ![community apps search results for mariadb](https://github.com/user-attachments/assets/76f4b6ef-5b63-454f-9357-d2920b9afd0e)
 
