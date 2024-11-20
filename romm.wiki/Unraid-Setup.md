@@ -48,6 +48,11 @@ Apply the changes, then head to the `DOCKER` tab. You should see both containers
 
 ## Video tutorial
 
+[DemonWarriorTech](https://www.youtube.com/@DemonWarriorTech) has published [How to Install RomM on Unraid (Beginner Friendly)](https://www.youtube.com/watch?v=Oo5obHNy2iw) on installing and running RomM on Unraid for Beginners with an in depth instructions and explanation of the software install and how to use it.
+
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/Oo5obHNy2iw/0.jpg)](https://www.youtube.com/watch?v=Oo5obHNy2iw)
+
+
 [AlienTech42](https://www.youtube.com/@AlienTech42) has published [a great video](https://www.youtube.com/watch?v=ls5YcsFdwLQ) on installing and running RomM on Unraid. While a bit out of date vis-a-vis install instructions, it's still very useful for general setup and debugging. Check it out!
 
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/ls5YcsFdwLQ/0.jpg)](https://www.youtube.com/watch?v=ls5YcsFdwLQ)
