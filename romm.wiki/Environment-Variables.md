@@ -11,10 +11,22 @@ This is a complete list of available environment variables; required variables a
 |DB_NAME|Should match MYSQL_DATABASE in mariadb||`romm`|
 |DB_USER|Should match MYSQL_USER in mariadb|✓||
 |DB_PASSWD|Should match MYSQL_PASSWORD in mariadb|✓||
+|REDIS_HOST|Host name of Redis instance||`127.0.0.1`|
+|REDIS_PORT|Port number of Redis instance||`6379`|
+|REDIS_PASSWORD|Password for Redis instance|||
+|REDIS_USERNAME|Username for Redis instance|||
+|REDIS_DB|Database number for Redis instance||`0`|
+|REDIS_SSL|Enable SSL for Redis instance||`false`|
 |ROMM_AUTH_SECRET_KEY|Generate a key with `openssl rand -hex 32`|✓||
 |ROMM_HOST|Host name of ROMM instance||`localhost`|
+|OIDC_ENABLED|Enable OpenID Connect (OIDC) authentication||`false`|
+|OIDC_CLIENT_ID|Client ID for OIDC authentication|||
+|OIDC_CLIENT_SECRET|Client secret for OIDC authentication|||
+|OIDC_REDIRECT_URI|Absolute redirect URI for OIDC authentication|||
+|OIDC_SERVER_APPLICATION_URL|Absolute URL of the OIDC server application|||
 |DISABLE_CSRF_PROTECTION|Disables [CSRF protection](https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html) (not recommended)||`false`|
 |DISABLE_DOWNLOAD_ENDPOINT_AUTH|Disable auth on download endpoint (WebRcade, Tinfoil)||`false`|
+|UPLOAD_TIMEOUT|Timeout for file uploads (in seconds)||`600`|
 |SCAN_TIMEOUT|Timeout for the background scan/rescan tasks (in seconds)||`14400`|
 |ENABLE_RESCAN_ON_FILESYSTEM_CHANGE|Enable rescanning of library when filesystem changes||`false`|
 |RESCAN_ON_FILESYSTEM_CHANGE_DELAY|Delay in minutes before rescanning library when filesystem changes||`5`|
@@ -27,3 +39,8 @@ This is a complete list of available environment variables; required variables a
 |DISABLE_EMULATOR_JS|Disables playing in browser with [EmulatorJS](https://github.com/rommapp/romm/wiki/EmulatorJS-Player)||`false`|
 |DISABLE_RUFFLE_RS|Disables playing flash games with [RuffleRS](https://github.com/rommapp/romm/wiki/RuffleRS-Player)||`false`|
 |TZ|Sets the timezone||`UTC`|
+|GUNICORN_WORKERS|Number of processes running the app||`2`|
+|ROMM_BASE_PATH|Base folder path for library, resources and assets||`/romm`|
+|LOGLEVEL|Logging level for the app||`INFO`|
+|FORCE_COLOR|Forces color output||`false`|
+|NO_COLOR|Disables color output||`false`|

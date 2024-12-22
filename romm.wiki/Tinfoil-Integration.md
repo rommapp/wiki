@@ -42,7 +42,7 @@ Now it's time to configure your switch - Please follow the steps, this will assu
 
 Now you will be able to see the files in "New Games" tab of Tinfoil OR you can access it within the "File Browser" section that you setup earlier.
 
-![Image of Tinfoil](./romm.wiki/resources/tinfoilscreen.jpg)
+![Image of Tinfoil](https://raw.githubusercontent.com/rommapp/wiki/refs/heads/main/romm.wiki/resources/tinfoil/tinfoilscreen.jpg)
 
 
 ## Additional 
@@ -52,6 +52,6 @@ It didn't pull anything through to "New Games" and has not parsed any informatio
 That would be becasue the filename it has tried to pull had no TitleID (Improvement to RomM coming soon :tm:)
 
 Make sure the filename has the TitleID within the title like this:
-![TitleID](h./romm.wiki/resources/titleid.jpg)
+![TitleID](https://raw.githubusercontent.com/rommapp/wiki/refs/heads/main/romm.wiki/resources/tinfoil/titleid.jpg)
 
 Once this is done, the next time Tinfoil is opened it is always parsed and re-scanned. 
