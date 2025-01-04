@@ -6,19 +6,19 @@ This is a complete list of available environment variables; required variables a
 |IGDB_CLIENT_SECRET|Client secret for IGDB API|||
 |MOBYGAMES_API_KEY|Mobygames secret API key|||
 |STEAMGRIDDB_API_KEY|SteamGridDB secret API key|||
-|DB_HOST|Host name of MariaDB instance|✓|`localhost`|
-|DB_PORT|Port number of MariaDB instance||`3306`|
+|DB_HOST|Host name of database instance|✓|`127.0.0.1`|
+|DB_PORT|Port number of database instance||`3306`|
 |DB_NAME|Should match MYSQL_DATABASE in mariadb||`romm`|
-|DB_USER|Should match MYSQL_USER in mariadb|✓||
-|DB_PASSWD|Should match MYSQL_PASSWORD in mariadb|✓||
-|REDIS_HOST|Host name of Redis instance||`127.0.0.1`|
-|REDIS_PORT|Port number of Redis instance||`6379`|
-|REDIS_PASSWORD|Password for Redis instance|||
-|REDIS_USERNAME|Username for Redis instance|||
-|REDIS_DB|Database number for Redis instance||`0`|
+|DB_USER|Database username (in MariaDB, should match MARIADB_USER)|✓||
+|DB_PASSWD|Database password (in MariaDB, should match MARIADB_PASSWORD)|✓||
+|ROMM_DB_DRIVER|Database driver to use (options: `mariadb`, `mysql`, `postgres`)||`mariadb`|
+|REDIS_HOST|Host name of Redis/Valkey instance||`127.0.0.1`|
+|REDIS_PORT|Port number of Redis/Valkey instance||`6379`|
+|REDIS_USERNAME|Username for Redis/Valkey instance|||
+|REDIS_PASSWORD|Password for Redis/Valkey instance|||
+|REDIS_DB|Database number for Redis/Valkey instance||`0`|
 |REDIS_SSL|Enable SSL for Redis instance||`false`|
 |ROMM_AUTH_SECRET_KEY|Generate a key with `openssl rand -hex 32`|✓||
-|ROMM_HOST|Host name of ROMM instance||`localhost`|
 |OIDC_ENABLED|Enable OpenID Connect (OIDC) authentication||`false`|
 |OIDC_PROVIDER|Name of the OIDC provider in use|||
 |OIDC_CLIENT_ID|Client ID for OIDC authentication|||
@@ -35,8 +35,6 @@ This is a complete list of available environment variables; required variables a
 |SCHEDULED_RESCAN_CRON|Cron expression for scheduled rescanning||`"0 3 * * *"`|
 |ENABLE_SCHEDULED_UPDATE_SWITCH_TITLEDB|Enable scheduled updating of Switch TitleDB index||`false`|
 |SCHEDULED_UPDATE_SWITCH_TITLEDB_CRON|Cron expression for scheduled updating of Switch TitleDB||`"0 4 * * *"`|
-|ENABLE_SCHEDULED_UPDATE_MAME_XML|Enable scheduled updating of MAME XML index||`false`|
-|SCHEDULED_UPDATE_MAME_XML_CRON|Cron expression for scheduled updating of MAME XML||`"0 5 * * *"`|
 |DISABLE_EMULATOR_JS|Disables playing in browser with [EmulatorJS](https://github.com/rommapp/romm/wiki/EmulatorJS-Player)||`false`|
 |DISABLE_RUFFLE_RS|Disables playing flash games with [RuffleRS](https://github.com/rommapp/romm/wiki/RuffleRS-Player)||`false`|
 |TZ|Sets the timezone||`UTC`|
@@ -45,7 +43,8 @@ This is a complete list of available environment variables; required variables a
 |LOGLEVEL|Logging level for the app||`INFO`|
 |FORCE_COLOR|Forces color output||`false`|
 |NO_COLOR|Disables color output||`false`|
+|SENTRY_DSN|DSN for Sentry error tracking|||
 
 
 > [!TIP]
-> You can also set environment variables with a `_FILE suffix`, which will load the contents of the file specified in the variable into the variable without the suffix. For example, setting `ROMM_AUTH_SECRET_KEY_FILE=/run/secrets/romm_auth_secret_key` and creating a file with the secret key at the specified path will set `ROMM_AUTH_SECRET_KEY` to the contents of the file. [Learn more.](https://docs.docker.com/compose/how-tos/use-secrets/)
+> You can also set environment variables with a `_FILE` suffix, which will load the contents of the file specified in the variable into the variable without the suffix. For example, setting `ROMM_AUTH_SECRET_KEY_FILE=/run/secrets/romm_auth_secret_key` and creating a file with the secret key at the specified path will set `ROMM_AUTH_SECRET_KEY` to the contents of the file. [Learn more.](https://docs.docker.com/compose/how-tos/use-secrets/)
