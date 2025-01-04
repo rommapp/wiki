@@ -20,6 +20,7 @@ This is a complete list of available environment variables; required variables a
 |ROMM_AUTH_SECRET_KEY|Generate a key with `openssl rand -hex 32`|✓||
 |ROMM_HOST|Host name of ROMM instance||`localhost`|
 |OIDC_ENABLED|Enable OpenID Connect (OIDC) authentication||`false`|
+|OIDC_PROVIDER|Name of the OIDC provider in use|||
 |OIDC_CLIENT_ID|Client ID for OIDC authentication|||
 |OIDC_CLIENT_SECRET|Client secret for OIDC authentication|||
 |OIDC_REDIRECT_URI|Absolute redirect URI for OIDC authentication|||
