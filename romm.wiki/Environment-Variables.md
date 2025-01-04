@@ -44,3 +44,7 @@ This is a complete list of available environment variables; required variables a
 |LOGLEVEL|Logging level for the app||`INFO`|
 |FORCE_COLOR|Forces color output||`false`|
 |NO_COLOR|Disables color output||`false`|
+
+
+> [!TIP]
+> You can also set environment variables with a `_FILE suffix`, which will load the contents of the file specified in the variable into the variable without the suffix. For example, setting `ROMM_AUTH_SECRET_KEY_FILE=/run/secrets/romm_auth_secret_key` and creating a file with the secret key at the specified path will set `ROMM_AUTH_SECRET_KEY` to the contents of the file. [Learn more.](https://docs.docker.com/compose/how-tos/use-secrets/)
