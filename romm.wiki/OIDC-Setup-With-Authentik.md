@@ -59,6 +59,7 @@ An app in Authentik represents the external service (in our case RomM) that will
 To enable OIDC authentication in RomM, you need to set the following environment variables:
 
 - `OIDC_ENABLED`: Set to `true` to enable OIDC authentication.
+- `OIDC_PROVIDER`: The lowercase name of the provider (e.g., `authentik`, `authelia`).
 - `OIDC_CLIENT_ID`: The client ID copied from the Authentik application.
 - `OIDC_CLIENT_SECRET`: The client secret copied from the Authentik application.
 - `OIDC_REDIRECT_URI`: The redirect URI configured in the Authentik provider, in the format `http://romm.host.local/api/oauth/openid`.
