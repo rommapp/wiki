@@ -7,6 +7,7 @@ This is a complete list of available environment variables; required variables a
 |ROMM_AUTH_SECRET_KEY|Generate a key with `openssl rand -hex 32`|✓||
 |DISABLE_CSRF_PROTECTION|Disables [CSRF protection](https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html) (not recommended)||`false`|
 |DISABLE_DOWNLOAD_ENDPOINT_AUTH|Disable auth on download endpoint (WebRcade, Tinfoil)||`false`|
+|DISABLE_USERPASS_LOGIN|Disables login with username and password (when using OIDC)||`false`|
 |UPLOAD_TIMEOUT|Timeout for file uploads (in seconds)||`600`|
 |SCAN_TIMEOUT|Timeout for the background scan/rescan tasks (in seconds)||`14400`|
 |DISABLE_EMULATOR_JS|Disables playing in browser with [EmulatorJS](https://github.com/rommapp/romm/wiki/EmulatorJS-Player)||`false`|
@@ -55,6 +56,7 @@ This is a complete list of available environment variables; required variables a
 |OIDC_CLIENT_SECRET|Client secret for OIDC authentication|||
 |OIDC_REDIRECT_URI|Absolute redirect URI for OIDC authentication|||
 |OIDC_SERVER_APPLICATION_URL|Absolute URL of the OIDC server application|||
+|OIDC_TLS_CACERTFILE|Path to a file containing trusted CA certificates|||
 
 ## Background tasks
 
