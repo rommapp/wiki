@@ -135,7 +135,6 @@ Game Gear | `gamegear` |  | <a href="https://www.mobygames.com/platform/gamegear
 Game Wave | `game-wave` |  | <a href="https://www.mobygames.com/platform/game-wave" target="_blank" rel="noopener norefer">Mobygames</a>
 Game.Com | `game-dot-com` |  | <a href="https://www.mobygames.com/platform/game-dot-com" target="_blank" rel="noopener norefer">Mobygames</a>
 Game.com | `game-dot-com` | <a href="https://www.igdb.com/platforms/game-dot-com" target="_blank" rel="noopener norefer">IGDB</a>| <a href="https://www.mobygames.com/platform/game-com" target="_blank" rel="noopener norefer">Mobygames</a>
-GameCube | `ngc` |  | <a href="https://www.mobygames.com/platform/ngc" target="_blank" rel="noopener norefer">Mobygames</a>
 GameStick | `gamestick` |  | <a href="https://www.mobygames.com/platform/gamestick" target="_blank" rel="noopener norefer">Mobygames</a>
 Gear VR | `gear-vr` | <a href="https://www.igdb.com/platforms/gear-vr" target="_blank" rel="noopener norefer">IGDB</a>|  |
 Genesis/Mega Drive | `genesis-slash-megadrive` |  | <a href="https://www.mobygames.com/platform/genesis-slash-megadrive" target="_blank" rel="noopener norefer">Mobygames</a>
