@@ -17,11 +17,17 @@ Copy your rom files to a new directory `roms-unverified`. This is useful for two
 
 2. You can easily tweak the script that runs the Igir tool and rerun in the event something goes unexpectedly.
 
-# Download the latest No-Intro DAT file pack
+# Download the latest DAT files
+
+## No-Intro
 
 Navigate to the [No-Intro.org Daily Download](https://datomatic.no-intro.org/index.php?page=download&op=daily) page. Download the latest compilation of .dat files.
 
 Create a new directory named `dats` and copy in the archive. Optionally if you only want to scan a subset you may extract a subset of .dat files into the directory instead.
+
+These DAT files work very well for cartridge consoles, but may not work well with optical redumps such as Sony PlayStation.
+
+For redumps try downloading DAT files from [redump.org](http://redump.org/downloads/) for the platforms that you are interested in.
 
 # Create the cleanup script
 
@@ -88,3 +94,31 @@ npx -y igir@latest \
 ```
 
 This will move your roms from the input to the output directory, preserving the subdirectory structure. It also cleans up file extensions in the process.
+
+# Reorganize multi-disc games
+
+The Igir script will move games that have multiple discs to separate folders. This can confuse Romm's game detection, and those games need to be reorganized into single folders with many discs.
+
+To do this enter your platform directory, such as `ps` or `psx` and run the following:
+
+```bash
+ls -d *Disc* | while read dir; do
+  game=$(echo "${dir}" | sed -r 's/ \(Disc [0-9]+\)//')
+  mkdir -p "${game}"
+  mv "${dir}"/* "${game}/"
+  rm -rf "${dir}"
+done
+```
+
+This will find any directory with `(Disc` in the name and move the files into a new directory without the `(Disc #)` string. For example:
+
+Before:
+```bash
+Final Fantasy VII (Disc 1) (USA)
+Final Fantasy VII (Disc 2) (USA)
+```
+
+Gets combined to:
+```bash
+Final Fantasy VII (USA)
+```
