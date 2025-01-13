@@ -50,7 +50,7 @@ time npx -y igir@latest \
   test \
   -d dats/ \
   -i "${INPUT_DIR}/" \
-  -o "${OUTPUT_DIR}/{romm}/{language}-{region}/" \
+  -o "${OUTPUT_DIR}/{romm}/" \
   --input-checksum-quick false \
   --input-checksum-min CRC32 \
   --input-checksum-max SHA256 \
@@ -66,20 +66,6 @@ chmod a+x igir-romm-cleanup.sh
 # Run the script
 
 Run the script. It will generate a new output directory named `roms-verified`, moving the files from `roms-unverified` if its checksum matches any of the known checksums in the DAT files provided. Any roms not identified will remain in the `roms-unverified` directory.
-
-The output directory will group roms based on platform (using Romm's platform name spec) and then language/region.
-
-For example:
-
-```bash
-roms-verified/gb/en-usa/
-roms-verified/nes/en-world/
-...
-```
-
-The language/region subdirectory structure is useful for quickly finding roms that you may not want to keep around. You can easily select the ones you do not want and delete them.
-
-If you do not want to keep the language/region subdirectory you can omit the `/{language}-{region}/` subpath in the script, or simply move the rom files after the script is run.
 
 # Manually move over remaining files
 
