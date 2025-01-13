@@ -6,7 +6,7 @@
 
 ### Directory structure
 
-The directory structure is important for running the bulk ROM renaming script. Your directory structure, when all data is copied in, should look something like below:
+The directory structure is important for running the bulk ROM renaming script. Before running the bulk ROM renaming script, set up your directories as follows:
 
 ```
 .
@@ -18,24 +18,25 @@ The directory structure is important for running the bulk ROM renaming script. Y
 
 ### Initial Setup Steps
 
-Copy your rom files to a new directory `roms-unverified`. This is useful for two reasons:
+1. Create a working copy of your ROMs:
+   ```bash
+   cp -r roms/ roms-unverified/
+   ```
+   This provides a safe working environment and allows for easy script adjustment if needed.
 
-1. You have confidence that anything done by the process below won't produce anything that you do not want done permanently.
-2. You can easily tweak the script that runs the Igir tool and rerun in the event something goes unexpectedly.
+2. Download DAT Files:
+   - For cartridge-based systems:
+     - Visit [No-Intro.org Daily Download](https://datomatic.no-intro.org/index.php?page=download&op=daily)
+     - Download the latest DAT compilation
+   - For optical media (e.g., PlayStation):
+     - Visit [redump.org](http://redump.org/downloads/)
+     - Download platform-specific DAT files
 
-### Download the latest DAT files
-
-Navigate to the [No-Intro.org Daily Download](https://datomatic.no-intro.org/index.php?page=download&op=daily) page. Download the latest compilation of .dat files.
-
-Create a new directory named `dats` and copy in the archive. Optionally if you only want to scan a subset you may extract a subset of .dat files into the directory instead.
-
-These DAT files work very well for cartridge consoles, but may not work well with optical redumps such as Sony PlayStation.
-
-For redumps try downloading DAT files from [redump.org](http://redump.org/downloads/) for the platforms that you are interested in.
+   Extract the DAT files to your `dats` directory. You can optionally extract a subset of the .dat files into the directory instead.
 
 ## Configuration
 
-Create a new script named `igir-romm-cleanup.sh` copying in the contents below:
+Create the cleanup script `igir-romm-cleanup.sh` with the contents below:
 
 ```bash
 #!/usr/bin/env bash
