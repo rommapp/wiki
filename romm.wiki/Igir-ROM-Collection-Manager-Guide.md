@@ -1,25 +1,29 @@
-# Directory structure
+# Igir ROM Collection Manager Guide
+
+[Igir](https://igir.io/) is a zero-setup ROM collection manager that sorts, filters, extracts or archives, patches, and reports on collections of any size on any OS. It can be used to rename your roms to match the RomM database, and to move them into a new directory structure.
+
+## Setup
+
+### Directory structure
 
 The directory structure is important for running the bulk ROM renaming script. Your directory structure, when all data is copied in, should look something like below:
 
-```bash
-dats # DAT files downloaded from no-intro.org
-roms # your raw roms dump
-roms-unverified # a copy of roms which will be used as the input directory for the script
-igir-romm-cleanup.sh # the script to run
+```
+.
+├── dats/              # DAT files from no-intro.org
+├── roms/              # Original ROM collection
+├── roms-unverified/   # Working copy of ROMs
+└── igir-romm-cleanup.sh
 ```
 
-# Copy your rom files
+### Initial Setup Steps
 
 Copy your rom files to a new directory `roms-unverified`. This is useful for two reasons:
 
 1. You have confidence that anything done by the process below won't produce anything that you do not want done permanently.
-
 2. You can easily tweak the script that runs the Igir tool and rerun in the event something goes unexpectedly.
 
-# Download the latest DAT files
-
-## No-Intro
+### Download the latest DAT files
 
 Navigate to the [No-Intro.org Daily Download](https://datomatic.no-intro.org/index.php?page=download&op=daily) page. Download the latest compilation of .dat files.
 
@@ -29,7 +33,7 @@ These DAT files work very well for cartridge consoles, but may not work well wit
 
 For redumps try downloading DAT files from [redump.org](http://redump.org/downloads/) for the platforms that you are interested in.
 
-# Create the cleanup script
+## Configuration
 
 Create a new script named `igir-romm-cleanup.sh` copying in the contents below:
 
@@ -57,17 +61,18 @@ time npx -y igir@latest \
   --only-retail
 ```
 
-Make sure it is executable:
-
+Make the script executable:
 ```bash
 chmod a+x igir-romm-cleanup.sh
 ```
 
-# Run the script
+## Usage
+
+### Run the script
 
 Run the script. It will generate a new output directory named `roms-verified`, moving the files from `roms-unverified` if its checksum matches any of the known checksums in the DAT files provided. Any roms not identified will remain in the `roms-unverified` directory.
 
-# Manually move over remaining files
+### Manually move over remaining files
 
 The script may not identify all of the roms in your input directory. You can choose to migrate them over manually:
 
@@ -81,7 +86,7 @@ npx -y igir@latest \
 
 This will move your roms from the input to the output directory, preserving the subdirectory structure. It also cleans up file extensions in the process.
 
-# Reorganize multi-disc games
+### Reorganize multi-disc games
 
 The Igir script will move games that have multiple discs to separate folders. This can confuse Romm's game detection, and those games need to be reorganized into single folders with many discs.
 
