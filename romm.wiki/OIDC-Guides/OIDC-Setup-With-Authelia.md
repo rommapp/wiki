@@ -54,7 +54,7 @@ This entry should look like this:
 To enable OIDC authentication in RomM, you need to set the following environment variables:
 
 - `OIDC_ENABLED`: Set to `true` to enable OIDC authentication.
-- `OIDC_PROVIDER`: The lowercase name of the provider (e.g., `authentik`, `authelia`).
+- `OIDC_PROVIDER`: The lowercase name of the provider (`authelia`).
 - `OIDC_CLIENT_ID`: The client ID copied from the Authelia application.
 - `OIDC_CLIENT_SECRET`: The generated output from `Random Password`.
 - `OIDC_REDIRECT_URI`: The redirect URI configured in the Authelia provider, in the format `http://romm.host.local/api/oauth/openid`.
@@ -63,9 +63,9 @@ To enable OIDC authentication in RomM, you need to set the following environment
 ### Step 4: Set your Email in RomM
 In RomM, open your user profile and set your email address. This email **has to match** your user email in Authelia.
 
-![Set email](https://raw.githubusercontent.com/rommapp/wiki/refs/heads/main/romm.wiki/resources/authentik/7-user-profile.png)
+![Set email](https://raw.githubusercontent.com/rommapp/wiki/refs/heads/main/romm.wiki/resources/authelia/1-user-profile.png)
 
 ### Step 5: Test the Integration
 After configuring the environment variables, restart (or stop and remove) your RomM instance and navigate to the login page. You should see an option to log in using OIDC. Click on the OIDC button, and you'll be redirected to Authelia for authentication. Once authenticated, you'll be redirected back to RomM.
 
-![Login with OIDC](https://raw.githubusercontent.com/rommapp/wiki/refs/heads/main/romm.wiki/resources/authentik/8-romm-login.png)
+![Login with OIDC](https://raw.githubusercontent.com/rommapp/wiki/refs/heads/main/romm.wiki/resources/authelia/2-romm-login.png)
