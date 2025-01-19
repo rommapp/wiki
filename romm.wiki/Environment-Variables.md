@@ -31,7 +31,7 @@ This is a complete list of available environment variables; required variables a
 |DB_NAME|Should match MYSQL_DATABASE in mariadb||`romm`|
 |DB_USER|Database username (in MariaDB, should match MARIADB_USER)|✓||
 |DB_PASSWD|Database password (in MariaDB, should match MARIADB_PASSWORD)|✓||
-|ROMM_DB_DRIVER|Database driver to use (options: `mariadb`, `mysql`, `postgres`)||`mariadb`|
+|ROMM_DB_DRIVER|Database driver to use (options: `mariadb`, `mysql`, `postgresql`)||`mariadb`|
 |REDIS_HOST|Host name of Redis/Valkey instance||`127.0.0.1`|
 |REDIS_PORT|Port number of Redis/Valkey instance||`6379`|
 |REDIS_USERNAME|Username for Redis/Valkey instance|||
