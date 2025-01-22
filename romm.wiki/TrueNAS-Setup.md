@@ -1,4 +1,4 @@
-# Synology Setup Guide
+# TrueNAS Setup Guide
 
 ## Prerequisites
 This guide assumes you're familiar with Docker and have basic knowledge of TrueNAS. You'll need:
