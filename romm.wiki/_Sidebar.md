@@ -14,6 +14,7 @@
 ### Setup Guides
 - [Unraid Setup Guide](Unraid-Setup)
 - [Synology Setup Guide](Synology-Setup)
+- [TrueNAS Setup Guide](TrueNAS-Setup)
 - [OIDC Setup With Authelia](OIDC-Setup-With-Authelia)
 - [OIDC Setup With Authentik](OIDC-Setup-With-Authentik)
 - [Tinfoil Integration Guide](Tinfoil-Integration)
