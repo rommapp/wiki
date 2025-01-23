@@ -2,8 +2,8 @@
 
 ## Prerequisites
 This guide assumes you're familiar with Docker and have basic knowledge of TrueNAS. You'll need:
-- A TrueNAS installation
-- A [Romm Folder structure](https://github.com/rommapp/romm/blob/release/README.md)
+- A running TrueNAS installation
+- Your games setup in the [required folder structure](https://github.com/rommapp/romm/blob/release/README.md)
 
 ## Setup Process
 
