@@ -1,8 +1,15 @@
 # An editable wiki for our projects
 
 ## Pushing to romm.wiki
-To push changes to the wiki, run this command from the root of the repository:
+
+First add the wiki as a remote:
 
 ```bash
-git push -f wiki main:master
+git remote add wiki git@github.com:rommapp/romm.wiki.git
+```
+
+Then run this command from the project root:
+
+```bash
+git push wiki main:master
 ```
