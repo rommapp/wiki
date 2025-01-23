@@ -7,9 +7,26 @@ This guide assumes you're familiar with Docker and have basic knowledge of TrueN
 
 ## Setup Process
 
-**Note:** There is currently an [open bug](https://github.com/truenas/apps/issues/1405) with the built-in Romm app for TrueNAS. Therefore, the recommended path at this time for a working installation is through custom YAML.
+### Install through the TrueNAS App Catalog (Recommended)
 
-### Install via YAML (Recommended as of 2025-01-21)
+#### Step 1: Navigate to Romm app
+Navigate to the App Catalog via Apps (Left Navbar) -> Discover Apps -> Romm -> Install
+
+![Romm app](resources/truenas/appstore.png)
+
+#### Step 2: Installation configuration
+Step through the installation UI. You will need to supply various credentials per the [Quick Start Guide](quick-start-guide). Most of the default values will work.
+
+Note: You will likely want to set certain Storage Configurations to a Dataset within TrueNAS, such as your Romm Library and Assets storage. If you do this, ensure you provide ACL access to the UserID specified above (default: 568, apps user).
+
+![Romm Library Example](resources/truenas/app-config.png)
+
+#### Step 3: Save your configuration
+
+Save, and you're done! If the app will not boot, refer to [Troubleshooting](#troubleshooting) or head on over to the [Discord](https://discord.gg/P5HtHnhUDH).
+
+### Install via YAML
+This installation path should only be used in the event that there is a bug with installing through the App Catalog, or you wish to have more flexibility than is provided by the installation UI.
 
 #### Step 1: Navigate to YAML install
 Navigate to the `Install via YAML` page via Apps (Left Navbar) -> Discover Apps -> Install via YAML
@@ -82,24 +99,6 @@ volumes:
   romm_redis_data: Null
 
 ```
-
-#### Step 3: Save your configuration
-
-Save, and you're done! If the app will not boot, refer to [Troubleshooting](#troubleshooting) or head on over to the [Discord](https://discord.gg/P5HtHnhUDH).
-
-### Install via through the TrueNAS App Store
-
-#### Step 1: Navigate to Romm app
-Navigate to the App Store via Apps (Left Navbar) -> Discover Apps -> Romm -> Install
-
-![Romm app](resources/truenas/appstore.png)
-
-#### Step 2: Installation configuration
-Step through the installation UI. You will need to supply various credentials per the [Quick Start Guide](quick-start-guide). Most of the default values will work.
-
-Note: You will likely want to set certain Storage Configurations to a Dataset within TrueNAS, such as your Romm Library and Assets storage. If you do this, ensure you provide ACL access to the UserID specified above (default: 568, apps user).
-
-![Romm Library Example](resources/truenas/app-config.png)
 
 #### Step 3: Save your configuration
 
