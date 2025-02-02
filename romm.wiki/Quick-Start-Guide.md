@@ -16,6 +16,9 @@ This guide will assume that you already have the following done, if not - stop h
 * A MobyGames account (optional)
 * Your Roms organized in the correct format
 
+> [!CAUTION]
+> Not setting up RomM with a metadata API will work for basic operation but can cause issues with, for instance, the Playnite Plugin. It is recommended to setup IGDB (or MobyGames) APIs to counter issues whilst setting RomM up.
+
 #### Twitch and MobyGames API Keys
 
 Head over to [API key docs](https://github.com/rommapp/romm/wiki/Generate-API-Keys) to get your Twitch and/or MobyGames keys, then come back here
