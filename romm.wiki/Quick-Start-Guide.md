@@ -17,7 +17,7 @@ This guide will assume that you already have the following done, if not - stop h
 * Your Roms organized in the correct format
 
 > [!CAUTION]
-> Not setting up RomM with a metadata API will work for basic operation but can cause issues with, for instance, the Playnite Plugin. It is recommended to setup IGDB (or MobyGames) APIs to counter issues whilst setting RomM up.
+> Not setting up RomM with a metadata API will work for basic operation but can cause issues with, for instance, the Playnite plugin. It is recommended to setup IGDB API keys to avoid issues during setup.
 
 #### Twitch and MobyGames API Keys
 
