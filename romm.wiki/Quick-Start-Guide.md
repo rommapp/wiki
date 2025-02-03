@@ -9,7 +9,7 @@ This quick start guide will help you get a RomM instance up and running. It is s
 This guide will assume that you already have the following done, if not - stop here and come back when you do.
 
 * Docker and Docker Compose installed
-* OpenSSL installed
+* OpenSSL installed (optional)
 * A Twitch account (optional)
     * 2-factor authentication set up on your Twitch account
     * *This is required to get a dev account and an IGDB key*
