@@ -15,12 +15,17 @@ Note the client ID and secret that appear on screen, and use them to set `IGDB_C
 |![IGDB_Creation](https://github.com/rommapp/romm/assets/3247106/7a93bf68-f6d9-46a5-ab72-719f2d5ec9d3)|![IGDB_Secret](https://github.com/rommapp/romm/assets/3247106/7a9dc056-52be-41c4-aec5-e2758aa520b5)|
 |---|---|
 
-## Mobygames
+## MobyGames
 
-To access the Mobygames API, [create a MobyGames account](https://www.mobygames.com/user/register/) and then visit your profile page. Click the 'API' link under your user name to sign up for an API key. Copy the key shown and use it to set `MOBYGAMES_API_KEY`.
+To access the MobyGames API, [create a MobyGames account](https://www.mobygames.com/user/register/) and then visit your profile page. Click the **API** link under your user name to sign up for an API key. Copy the key shown and use it to set `MOBYGAMES_API_KEY`.
 
 > [!IMPORTANT]  
 > **MobyGames API became a [paid feature](https://www.mobygames.com/info/api/#non-commercial). Any existing key can be used as usual, but any new API key created will be under a paywall**
+
+
+## ScreenScraper
+
+To access the ScreenScraper API, create a [ScreenScraper](https://www.screenscraper.fr/membreinscription.php) and copy the **user** and **password** you just created to `SCREENSCRAPER_USER` and `SCREENSCRAPER_PASSWORD` respectively.
 
 ## SteamGridDB
 
