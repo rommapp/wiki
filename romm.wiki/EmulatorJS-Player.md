@@ -3,6 +3,9 @@
 > [!CAUTION]
 > Due to a [change by Apple in iOS 18.2](https://bugs.webkit.org/show_bug.cgi?id=284752), emulation is severely limited, and likely non-functional, on iOS devices.
 
+> [!CAUTION]
+> PSP emulation with the PPSSPP core requires [special setup with a reverse proxy](https://emulatorjs.org/docs/options#ejs_threads), or launching Chrome browser with the `--disable-web-security` and `--enable-features=SharedArrayBuffer` flags, which WE STRONGLY DISCOURAGE as it disables important security features.
+
 > [!WARNING]
 > Emulation is a complex and resource-intensive process. As such, it may not work well in all browser, especially older or less powerful ones. If you're having trouble running a game, try using a different browser or device.
 
