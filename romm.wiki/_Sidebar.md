@@ -17,6 +17,7 @@
 - [TrueNAS Setup Guide](TrueNAS-Setup)
 - [OIDC Setup With Authelia](OIDC-Setup-With-Authelia)
 - [OIDC Setup With Authentik](OIDC-Setup-With-Authentik)
+- [OIDC Setup With PockedID](OIDC-Setup-With-PockedID)
 - [Tinfoil Integration Guide](Tinfoil-Integration)
 
 ### Tools
