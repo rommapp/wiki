@@ -26,3 +26,6 @@
 - [Scheduled Tasks](Scheduled-Tasks)
 - [Troubleshooting](Troubleshooting)
 - [Upgrading to 3.0](Upgrading-to-3.0)
+
+### Miscellaneous
+- [Branding Guidelines](Brand-Guidelines)
