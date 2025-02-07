@@ -2,14 +2,9 @@
 
 ## Pushing to romm.wiki
 
-First add the wiki as a remote:
+Install [just](https://github.com/casey/just#installation) and run the `push` command:
 
 ```bash
-git remote add wiki git@github.com:rommapp/romm.wiki.git
-```
-
-Then run this command from the project root:
-
-```bash
-git push wiki main:master
+chmod +x push_wiki.sh
+just push
 ```
