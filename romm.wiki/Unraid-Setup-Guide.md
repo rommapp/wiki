@@ -1,5 +1,3 @@
-# Unraid Setup Instructions
-
 ## Prerequisites
 
 Before getting started, install the [Community Apps plugin](https://forums.unraid.net/topic/38582-plug-in-community-applications/) for Unraid.

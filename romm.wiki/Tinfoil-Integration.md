@@ -5,8 +5,6 @@ This will help you configure the [Tinfoil](https://tinfoil.io/) integration for 
 - [Additional](#Additional)
 - Enjoy!
 
-
-
 <img src="https://cdn2.steamgriddb.com/icon_thumb/1178cf1b6a47d41fc664b7d97e305840.png" alt="drawing" width="200"/>
 
 ## Prepare

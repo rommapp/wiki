@@ -13,7 +13,7 @@
 
 ### System Setup Guides
 - [Unraid Setup Guide](Unraid-Setup)
-- [Synology Setup Guide](Synology-Setup)
+- [Synology Setup Guide](Synology-Setup-Guide)
 - [TrueNAS Setup Guide](TrueNAS-Setup)
 - [Tinfoil Integration Guide](Tinfoil-Integration)
 

@@ -1,5 +1,3 @@
-# Synology Setup Guide
-
 ## Prerequisites
 This guide assumes you're familiar with Docker and have basic knowledge of server management. You'll need:
 - A Synology NAS or similar server
