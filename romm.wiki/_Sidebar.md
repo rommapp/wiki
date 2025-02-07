@@ -11,14 +11,16 @@
 - [EmulatorJS Player](EmulatorJS-Player)
 - [RuffleRS Player](RuffleRS-Player)
 
-### Setup Guides
+### System Setup Guides
 - [Unraid Setup Guide](Unraid-Setup)
 - [Synology Setup Guide](Synology-Setup)
 - [TrueNAS Setup Guide](TrueNAS-Setup)
+- [Tinfoil Integration Guide](Tinfoil-Integration)
+
+### OIDC Setup Guides
 - [OIDC Setup With Authelia](OIDC-Setup-With-Authelia)
 - [OIDC Setup With Authentik](OIDC-Setup-With-Authentik)
-- [OIDC Setup With PockedID](OIDC-Setup-With-PockedID)
-- [Tinfoil Integration Guide](Tinfoil-Integration)
+- [OIDC Setup With PockedID](OIDC-Setup-With-PocketID)
 
 ### Tools
 - [Igir Collection Manager](Igir-Collection-Manager-Guide)
