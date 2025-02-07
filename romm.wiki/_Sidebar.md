@@ -12,10 +12,10 @@
 - [RuffleRS Player](RuffleRS-Player)
 
 ### System Setup Guides
-- [Unraid Setup Guide](Unraid-Setup)
-- [Synology Setup Guide](Synology-Setup-Guide)
-- [TrueNAS Setup Guide](TrueNAS-Setup)
-- [Tinfoil Integration Guide](Tinfoil-Integration)
+- [Unraid Setup](Unraid-Setup-Guide)
+- [Synology Setup](Synology-Setup-Guide)
+- [TrueNAS Setup](TrueNAS-Setup-Guide)
+- [Tinfoil Integration](Tinfoil-Integration)
 
 ### OIDC Setup Guides
 - [OIDC Setup With Authelia](OIDC-Setup-With-Authelia)
