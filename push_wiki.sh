@@ -10,4 +10,4 @@ git add .
 git commit -m "Auto-commit: $(date '+%Y-%m-%d %H:%M:%S')"
 
 # Push to the master branch
-# git push origin master
+git push origin master
