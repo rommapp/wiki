@@ -1,4 +1,4 @@
-## Scheduled tasksa
+## Scheduled tasks
 
 Scheduled tasks can be enabled and configured with the following environment variables:
 
