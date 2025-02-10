@@ -31,5 +31,5 @@
 - [Upgrading to 3.0](Upgrading-to-3.0)
 
 ### Miscellaneous
-- [FAQ](FAQ)
+- [FAQs](FAQs)
 - [Branding Guidelines](Brand-Guidelines)
