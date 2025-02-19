@@ -16,7 +16,7 @@ This is a complete list of available environment variables; required variables a
 |DISABLE_EMULATOR_JS|Disables playing in browser with [EmulatorJS](https://github.com/rommapp/romm/wiki/EmulatorJS-Player)||`false`|
 |DISABLE_RUFFLE_RS|Disables playing flash games with [RuffleRS](https://github.com/rommapp/romm/wiki/RuffleRS-Player)||`false`|
 |TZ|Sets the timezone||`UTC`|
-|GUNICORN_WORKERS|Number of processes running the app||`2`|
+|WEB_CONCURRENCY|Number of processes running the web application||`2`|
 |ROMM_BASE_PATH|Base folder path for library, resources and assets||`/romm`|
 |LOGLEVEL|Logging level for the app||`INFO`|
 |FORCE_COLOR|Forces color output||`false`|
