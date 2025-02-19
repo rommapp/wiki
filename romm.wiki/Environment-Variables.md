@@ -18,6 +18,7 @@ This is a complete list of available environment variables; required variables a
 |TZ|Sets the timezone||`UTC`|
 |GUNICORN_WORKERS|Number of processes running the app||`2`|
 |ROMM_BASE_PATH|Base folder path for library, resources and assets||`/romm`|
+|ROMM_PORT|Port number for the web application||`8080`|
 |LOGLEVEL|Logging level for the app||`INFO`|
 |FORCE_COLOR|Forces color output||`false`|
 |NO_COLOR|Disables color output||`false`|
