@@ -1,0 +1,5 @@
+site_name: RomM Docs
+docs_dir: romm.wiki
+site_url: https://wiki.romma.app/
+theme:
+  name: material

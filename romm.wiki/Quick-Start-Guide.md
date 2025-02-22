@@ -21,7 +21,7 @@ This guide will assume that you already have the following done, if not - stop h
 
 #### Twitch and MobyGames API Keys
 
-Head over to [API key docs](https://github.com/rommapp/romm/wiki/Generate-API-Keys) to get your Twitch and/or MobyGames keys, then come back here
+Head over to [API key docs](Generate-API-Keys) to get your Twitch and/or MobyGames keys, then come back here
 
 #### Generating Authentication Keys
 
