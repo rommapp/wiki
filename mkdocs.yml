@@ -1,10 +1,11 @@
-site_name: RomM Docs
+site_name: RomM
 docs_dir: docs
-site_url: https://wiki.romma.app/
+site_url: https://docs.romm.app/
 site_author: RomM Team
 site_description: Your beautiful, powerful, self-hosted rom manager
 repo_url: "https://github.com/rommapp/wiki"
-repo_name: rommapp/wiki
+repo_name: rommapp/romm
+edit_uri: "edit/main/docs/"
 theme:
     name: material
     logo: resources/romm/logo.png
