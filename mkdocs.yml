@@ -1,5 +1,6 @@
 site_name: RomM Docs
-docs_dir: docs
+docs_dir: src
+site_dir: docs
 site_url: https://wiki.romma.app/
 site_author: RomM Team
 site_description: Your beautiful, powerful, self-hosted rom manager
@@ -47,7 +48,7 @@ plugins:
               font_family: Roboto
               background_color: "#371f69"
               color: "#ede5f8"
-              logo: docs/assets/images/romm-logo.png
+              logo: src/assets/images/romm-logo.png
               title: RomM Docs
               description: Your beautiful, powerful, self-hosted rom manager
     - glightbox:
@@ -67,8 +68,8 @@ markdown_extensions:
     - pymdownx.inlinehilite
     - pymdownx.snippets:
         base_path:
-          - docs
-          - docs/resources/snippets
+          - src
+          - src/resources/snippets
         check_paths: true
     - admonition
     - pymdownx.arithmatex:
@@ -106,5 +107,5 @@ extra_css:
     - resources/css/extra.css
 
 watch:
-    - docs
-    - docs/resources
+    - src
+    - src/resources
