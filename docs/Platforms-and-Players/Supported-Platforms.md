@@ -1,4 +1,5 @@
 <!-- vale off -->
+
 Below is a list of all supported platforms/systems/consoles and their respective folder names. **The folder name is case-sensitive and must be used exactly as it appears in the list below.**
 
 | Platform Name                                         | Folder Name                                     | IGDB                                                                                                                                   | MobyGames                                                                                                                                  |
@@ -408,4 +409,5 @@ Below is a list of all supported platforms/systems/consoles and their respective
 | visionOS                                              | `visionos`                                      | <a href="https://www.igdb.com/platforms/visionos" target="_blank" rel="noopener norefer">IGDB</a>                                      |                                                                                                                                            |
 | watchOS                                               | `watchos`                                       |                                                                                                                                        | <a href="https://www.mobygames.com/platform/watchos" target="_blank" rel="noopener norefer">MobyGames</a>                                  |
 | webOS                                                 | `webos`                                         |                                                                                                                                        | <a href="https://www.mobygames.com/platform/webos" target="_blank" rel="noopener norefer">MobyGames</a>                                    |
+
 <!-- vale on -->

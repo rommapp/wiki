@@ -8,7 +8,7 @@ description: Troubleshooting miscellaneous issues
 Verify that the database is mapped to a persistent storage volume in your docker compose or Unraid template.
 
 ```yaml
-    "/path/to/database:/romm/database" # [Optional] Only needed if ROMM_DB_DRIVER=sqlite or not set
+"/path/to/database:/romm/database" # [Optional] Only needed if ROMM_DB_DRIVER=sqlite or not set
 ```
 
 ### Error: `Could not get twitch auth token: check client_id and client_secret`

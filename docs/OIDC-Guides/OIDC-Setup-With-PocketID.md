@@ -32,7 +32,7 @@ Once you have logged in and configured a PassKey you now need to create an OIDC 
 - Go to OIDC Client
 - Click Add OIDC Client
     - Name: RomM
-    - Callback URLs: https://{yoururl}/api/oauth/openid
+    - Callback URLs: `https://{host}/api/oauth/openid`
 - Click Save
 - Stay on this page, you will be shown your client secret only THIS time.
 
@@ -44,7 +44,7 @@ To enable OIDC authentication in RomM, you need to set the following environment
 - `OIDC_PROVIDER`: The lowercase name of the provider (`pocketid`).
 - `OIDC_CLIENT_ID`: The client ID copied from the Pocket ID application
 - `OIDC_CLIENT_SECRET`: The client secret that is showing within your Pocket ID application.
-- `OIDC_REDIRECT_URI`: The redirect URI configured in the Pocket ID provider, in the format `https://{yoururl}/api/oauth/openid`.
+- `OIDC_REDIRECT_URI`: The redirect URI configured in the Pocket ID provider, in the format `https://{host}/api/oauth/openid`.
 - `OIDC_SERVER_APPLICATION_URL`: The authorization URL for you Pocket ID instance, e.g. `https://id.host.local/authorize`.
 
 ### Step 4: Set your Email in RomM

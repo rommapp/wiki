@@ -65,6 +65,7 @@ RomM currently supports 3 metadata sources: IGDB, MobyGames and SteamGridDB. Fol
 
 ### 4. MariaDB Configuration
 
+<!-- prettier-ignore -->
 !!! important
     - This guide uses a dedicated MariaDB container for RomM, but you can use an existing MariaDB instance if preferred
     - We're using MariaDB version 10.7 for compatibility
@@ -75,6 +76,7 @@ RomM currently supports 3 metadata sources: IGDB, MobyGames and SteamGridDB. Fol
 
 Create a `docker-compose.yml` file with the following content:
 
+<!-- prettier-ignore -->
 ???+ example "Example Docker Compose"
     ``` yaml
     --8<-- "synology.docker-compose.yml"
@@ -87,6 +89,7 @@ Create a `docker-compose.yml` file with the following content:
 3. Monitor progress through container logs
 4. Access RomM through your browser at `http://your-server-ip:7676`
 
+<!-- prettier-ignore -->
 !!! important
     - Replace placeholder values (UIDs, GIDs, passwords, API keys) with your own
     - Ensure proper permissions on all created directories

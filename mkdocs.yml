@@ -66,8 +66,8 @@ markdown_extensions:
     - pymdownx.inlinehilite
     - pymdownx.snippets:
           base_path:
-            - docs
-            - docs/resources/snippets
+              - docs
+              - docs/resources/snippets
           check_paths: true
     - admonition
     - pymdownx.arithmatex:

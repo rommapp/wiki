@@ -41,6 +41,7 @@ Navigate to the `Install via YAML` page via Apps (Left navigation bar) -> Discov
 
 Replace any empty values with credentials you've created per the [Quick Start Guide](../Getting-Started/Quick-Start-Guide.md).
 
+<!-- prettier-ignore -->
 ???+ example "Example Docker Compose"
     ``` yaml
     --8<-- "truenas.docker-compose.yml"

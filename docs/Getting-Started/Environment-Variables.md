@@ -1,5 +1,6 @@
 This is a complete list of available environment variables; required variables are marked with a `✓`.
 
+<!-- prettier-ignore -->
 !!! tip
     You can also set environment variables with a `_FILE` suffix, which will load the contents of the file specified in the variable into the variable without the suffix. For example, setting `ROMM_AUTH_SECRET_KEY_FILE=/run/secrets/romm_auth_secret_key` and creating a file with the secret key at the specified path will set `ROMM_AUTH_SECRET_KEY` to the contents of the file. [Learn more.](https://docs.docker.com/compose/how-tos/use-secrets/)
 
@@ -13,8 +14,8 @@ This is a complete list of available environment variables; required variables a
 | DISABLE_USERPASS_LOGIN         | Disables login with username and password (when using OIDC)                                                                                         |          | `false` |
 | UPLOAD_TIMEOUT                 | Timeout for file uploads (in seconds)                                                                                                               |          | `600`   |
 | SCAN_TIMEOUT                   | Timeout for the background scan/rescan tasks (in seconds)                                                                                           |          | `14400` |
-| DISABLE_EMULATOR_JS            | Disables playing in browser with [EmulatorJS](../Platforms-and-Players/EmulatorJS-Player.md)                                               |          | `false` |
-| DISABLE_RUFFLE_RS              | Disables playing flash games with [RuffleRS](../Platforms-and-Players/RuffleRS-Player.md)                                                  |          | `false` |
+| DISABLE_EMULATOR_JS            | Disables playing in browser with [EmulatorJS](../Platforms-and-Players/EmulatorJS-Player.md)                                                        |          | `false` |
+| DISABLE_RUFFLE_RS              | Disables playing flash games with [RuffleRS](../Platforms-and-Players/RuffleRS-Player.md)                                                           |          | `false` |
 | TZ                             | Sets the timezone                                                                                                                                   |          | `UTC`   |
 | GUNICORN_WORKERS               | Number of processes running the app                                                                                                                 |          | `2`     |
 | ROMM_BASE_PATH                 | Base folder path for library, resources and assets                                                                                                  |          | `/romm` |

@@ -33,8 +33,8 @@ RomM can also monitor the filesystem for events (files created/moved/deleted) an
 
 The watcher can be enabled and configured with the following environment variables:
 
-| Variable                           | Description                                                        | Value  |
-| ---------------------------------- | ------------------------------------------------------------------ | :----: |
+| Variable                           | Description                                                         | Value  |
+| ---------------------------------- | ------------------------------------------------------------------- | :----: |
 | ENABLE_RESCAN_ON_FILESYSTEM_CHANGE | Enable re-scanning of library when filesystem changes               | `true` |
 | RESCAN_ON_FILESYSTEM_CHANGE_DELAY  | Delay in minutes before re-scanning library when filesystem changes |  `5`   |
 

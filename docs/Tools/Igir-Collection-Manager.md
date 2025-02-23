@@ -8,9 +8,9 @@ The directory structure is important for running the bulk ROM renaming script. B
 
 ```md
 .
-├── dats/              # DAT files from no-intro.org
-├── roms/              # Original ROM collection
-├── roms-unverified/   # Working copy of ROMs
+├── dats/ # DAT files from no-intro.org
+├── roms/ # Original ROM collection
+├── roms-unverified/ # Working copy of ROMs
 └── igir-romm-cleanup.sh
 ```
 

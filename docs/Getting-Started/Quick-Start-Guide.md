@@ -16,6 +16,7 @@ This guide will assume that you already have the following done, if not - stop h
 - A MobyGames account (optional)
 - Your ROMs organized in the correct format
 
+<!-- prettier-ignore -->
 !!! warning
     Not setting up RomM with a metadata API will work for basic operation but can cause issues with, for instance, the Playnite plugin. It is recommended to setup IGDB API keys to avoid issues during setup.
 
@@ -60,6 +61,7 @@ Now that we have everything gathered, we can begin getting your instance set up!
     - `/path/to/config`: Path to the directory where you will store the config.yml
 5. Save the file as _docker-compose.yml_ instead of _docker-compose.example.yml_. It should look something like this:
 
+<!-- prettier-ignore -->
 ???+ example "Example Docker Compose"
     ``` yaml
     --8<-- "quick-start.docker-compose.yml"
