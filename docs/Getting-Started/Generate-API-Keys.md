@@ -24,10 +24,6 @@ To access the MobyGames API, [create a MobyGames account](https://www.mobygames.
 !!! important
     MobyGames API became a [paid feature](https://www.mobygames.com/info/api/#non-commercial). Any existing key can be used as usual, but any new API key created will be under a paywall
 
-## ScreenScraper
-
-To access the ScreenScraper API, create a [ScreenScraper](https://www.screenscraper.fr/membreinscription.php) and copy the **user** and **password** you just created to `SCREENSCRAPER_USER` and `SCREENSCRAPER_PASSWORD` respectively.
-
 ## SteamGridDB
 
 To access steamGridDB API, you need to login into their [website](https://www.steamgriddb.com/) with a [steam account](https://store.steampowered.com/join). Once logged in, go to your [API tab under the preferences page](https://www.steamgriddb.com/profile/preferences/api). Copy the key shown and use it to set `STEAMGRIDDB_API_KEY`.
