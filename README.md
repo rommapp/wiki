@@ -7,8 +7,9 @@
 
   <br />
 
-  [![license-badge-img]][license-badge]
-  [![discord-badge-img]][discord-badge]
+[![license-badge-img]][license-badge]
+[![discord-badge-img]][discord-badge]
+
   </div>
 </div>
 
