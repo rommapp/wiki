@@ -28,7 +28,7 @@ This is a complete list of available environment variables; required variables a
 | -------------- | ------------------------------------------------------------------ | :------: | ----------- |
 | DB_HOST        | Host name of database instance                                     |    ✓     | `127.0.0.1` |
 | DB_PORT        | Port number of database instance                                   |          | `3306`      |
-| DB_NAME        | Should match MYSQL_DATABASE in mariadb                             |          | `romm`      |
+| DB_NAME        | Should match MYSQL_DATABASE in MariaDB                             |          | `romm`      |
 | DB_USER        | Database username (in MariaDB, should match MARIADB_USER)          |    ✓     |             |
 | DB_PASSWD      | Database password (in MariaDB, should match MARIADB_PASSWORD)      |    ✓     |             |
 | ROMM_DB_DRIVER | Database driver to use (options: `mariadb`, `mysql`, `postgresql`) |          | `mariadb`   |
@@ -46,7 +46,7 @@ This is a complete list of available environment variables; required variables a
 | ------------------- | -------------------------- | :------: | ------- |
 | IGDB_CLIENT_ID      | Client ID for IGDB API     |          |         |
 | IGDB_CLIENT_SECRET  | Client secret for IGDB API |          |         |
-| MOBYGAMES_API_KEY   | Mobygames secret API key   |          |         |
+| MOBYGAMES_API_KEY   | MobyGames secret API key   |          |         |
 | STEAMGRIDDB_API_KEY | SteamGridDB secret API key |          |         |
 
 ## Authentication
@@ -63,11 +63,11 @@ This is a complete list of available environment variables; required variables a
 
 ## Background tasks
 
-| Variable                               | Description                                                        | Required | Default       |
-| -------------------------------------- | ------------------------------------------------------------------ | :------: | ------------- |
-| ENABLE_RESCAN_ON_FILESYSTEM_CHANGE     | Enable rescanning of library when filesystem changes               |          | `false`       |
-| RESCAN_ON_FILESYSTEM_CHANGE_DELAY      | Delay in minutes before rescanning library when filesystem changes |          | `5`           |
-| ENABLE_SCHEDULED_RESCAN                | Enable scheduled rescanning of library                             |          | `false`       |
-| SCHEDULED_RESCAN_CRON                  | Cron expression for scheduled rescanning                           |          | `"0 3 * * *"` |
-| ENABLE_SCHEDULED_UPDATE_SWITCH_TITLEDB | Enable scheduled updating of Switch TitleDB index                  |          | `false`       |
-| SCHEDULED_UPDATE_SWITCH_TITLEDB_CRON   | Cron expression for scheduled updating of Switch TitleDB           |          | `"0 4 * * *"` |
+| Variable                               | Description                                                         | Required | Default       |
+| -------------------------------------- | ------------------------------------------------------------------- | :------: | ------------- |
+| ENABLE_RESCAN_ON_FILESYSTEM_CHANGE     | Enable re-scanning of library when filesystem changes               |          | `false`       |
+| RESCAN_ON_FILESYSTEM_CHANGE_DELAY      | Delay in minutes before re-scanning library when filesystem changes |          | `5`           |
+| ENABLE_SCHEDULED_RESCAN                | Enable scheduled re-scanning of library                             |          | `false`       |
+| SCHEDULED_RESCAN_CRON                  | Cron expression for scheduled re-scanning                           |          | `"0 3 * * *"` |
+| ENABLE_SCHEDULED_UPDATE_SWITCH_TITLEDB | Enable scheduled updating of Switch TitleDB index                   |          | `false`       |
+| SCHEDULED_UPDATE_SWITCH_TITLEDB_CRON   | Cron expression for scheduled updating of Switch TitleDB            |          | `"0 4 * * *"` |

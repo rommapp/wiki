@@ -12,33 +12,33 @@ You'll want to create a custom bridge-type network for both containers to commun
 
 MariaDB is required to run RomM, so install it from the plugin registry. Only the [official](https://hub.docker.com/_/mariadb) and [linuxserver](https://github.com/linuxserver/docker-mariadb/pkgs/container/mariadb) versions are supported, but **the official version is preferred**.
 
-![community apps search results for mariadb](https://github.com/user-attachments/assets/76f4b6ef-5b63-454f-9357-d2920b9afd0e)
+![community apps search results for MariaDB](https://github.com/user-attachments/assets/76f4b6ef-5b63-454f-9357-d2920b9afd0e)
 
 Now fill in all the environment variables; descriptions of the options and sensible defaults are listed in the [example docker-compose.yml](https://github.com/rommapp/romm/blob/release/examples/docker-compose.example.yml) file.
 
 !!! warning
-    The network type must be set to "Custom: romm"
+    The network type must be set to `Custom: romm`
 
-![mariadb environment variables](https://github.com/user-attachments/assets/a11906c5-25b2-46f1-906b-451a9ee39dca)
+![MariaDB environment variables](https://github.com/user-attachments/assets/a11906c5-25b2-46f1-906b-451a9ee39dca)
 
 ## Installation
 
-From the Unraid dashboard, click `APPS` in the navbar. In the search bar, search for `romm`, and install the app listed as "OFFICIAL". This one is maintained by our team and is the most up-to-date.
+From the Unraid dashboard, click `APPS` in the navigation bar. In the search bar, search for `romm`, and install the app listed as "OFFICIAL". This one is maintained by our team and is the most up-to-date.
 
-![romm official app](https://github.com/user-attachments/assets/57c4d47a-8604-4e8d-b05a-84dd68dda124)
+![RomM official app](https://github.com/user-attachments/assets/57c4d47a-8604-4e8d-b05a-84dd68dda124)
 
 ## Configuration
 
 Configure the required environment variables, ports and paths as per the [example docker-compose.yml](https://github.com/rommapp/romm/blob/release/examples/docker-compose.example.yml) file.
 
 !!! warning
-    The network type must also be set to "Custom: romm"
+    The network type must also be set to `Custom: romm`
 
-![romm docker tab](https://github.com/user-attachments/assets/4c4210c2-ed00-4790-a945-65cbe33620b0)
+![RomM docker tab](https://github.com/user-attachments/assets/4c4210c2-ed00-4790-a945-65cbe33620b0)
 
 Apply the changes, then head to the `DOCKER` tab. You should see both containers in a running state, and can access RomM using the IP:PORT of the container (highlighted below).
 
-![romm and mariadb running](https://github.com/user-attachments/assets/cba26de1-d2c9-4fff-88d8-bc7701f0dd88)
+![RomM and MariaDB running](https://github.com/user-attachments/assets/cba26de1-d2c9-4fff-88d8-bc7701f0dd88)
 
 ### Updating
 
@@ -54,6 +54,6 @@ Apply the changes, then head to the `DOCKER` tab. You should see both containers
 
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/ls5YcsFdwLQ/0.jpg)](https://www.youtube.com/watch?v=ls5YcsFdwLQ)
 
-## Shoutouts
+## Shout-outs
 
-We want to give a special shoutout to @Smurre95 and @sfumat0 for their help documenting this process, and working towards getting RomM listed in CA. 🤝
+We want to give a special shout-out to @Smurre95 and @sfumat0 for their help documenting this process, and working towards getting RomM listed in CA. 🤝

@@ -9,19 +9,19 @@ This guide assumes you're familiar with Docker and have basic knowledge of TrueN
 
 ### Install through the TrueNAS App Catalog (Recommended)
 
-#### Step 1: Navigate to Romm app
+#### Step 1: Navigate to RomM app
 
-Navigate to the App Catalog via Apps (Left Navbar) -> Discover Apps -> Romm -> Install
+Navigate to the App Catalog via Apps (Left navigation bar) -> Discover Apps -> RomM -> Install
 
-![Romm app](../resources/truenas/appstore.png)
+![RomM app](../resources/truenas/appstore.png)
 
 #### Step 2: Installation configuration
 
 Step through the installation UI. You will need to supply various credentials per the [Quick Start Guide](../Getting-Started/Quick-Start-Guide.md). Most of the default values will work.
 
-Note: You will likely want to set certain Storage Configurations to a Dataset within TrueNAS, such as your Romm Library and Assets storage. If you do this, ensure you provide ACL access to the UserID specified above (default: 568, apps user).
+Note: You will likely want to set certain Storage Configurations to a Dataset within TrueNAS, such as your RomM Library and Assets storage. If you do this, ensure you provide ACL access to the UserID specified above (default: 568, apps user).
 
-![Romm Library Example](../resources/truenas/app-config.png)
+![RomM Library Example](../resources/truenas/app-config.png)
 
 #### Step 3: Save your configuration
 
@@ -33,7 +33,7 @@ This installation path should only be used in the event that there is a bug with
 
 #### Step 1: Navigate to YAML install
 
-Navigate to the `Install via YAML` page via Apps (Left Navbar) -> Discover Apps -> Install via YAML
+Navigate to the `Install via YAML` page via Apps (Left navigation bar) -> Discover Apps -> Install via YAML
 
 ![Install via YAML](../resources/truenas/install-via-yaml.png)
 
@@ -46,7 +46,7 @@ Replace any empty values with credentials you've created per the [Quick Start Gu
     --8<-- "truenas.docker-compose.yml"
     ```
 
-#### Step 3: Save your configuration
+#### Step 3: Save the configuration
 
 Save, and you're done! If the app will not boot, refer to [Troubleshooting](#troubleshooting) or head on over to the [Discord](https://discord.gg/P5HtHnhUDH).
 
@@ -60,11 +60,11 @@ Save, and you're done! If the app will not boot, refer to [Troubleshooting](#tro
 
 ### Specific Issues
 
-#### Permissions issues inside the docker image.
+#### Permissions issues inside the docker image
 
 If you are encountering permissions issues with folders internal to the docker image (not your TrueNAS dataset), consider temporarily setting the user to root (user: 0). If you do this, it is recommended you fix local file permissions via shell and return access back to a non-root user.
 
-In my particular setup, I had to create a user/group in TrueNAS with uid:gid of 1000:1000 and auxiliary group `apps` due to hard-coded values in the Romm docker image. This resolved outstanding issues I had with my instance of Romm talking to its Redis instance.
+In my particular setup, I had to create a user/group in TrueNAS with uid:gid of 1000:1000 and auxiliary group `apps` due to hard-coded values in the RomM docker image. This resolved outstanding issues I had with my instance of RomM talking to its Redis instance.
 
 ## Contributing
 

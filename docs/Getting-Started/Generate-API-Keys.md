@@ -12,7 +12,7 @@ To access the IGDB API you'll need a Twitch account and a valid phone number for
 
 Note the client ID and secret that appear on screen, and use them to set `IGDB_CLIENT_ID` and `IGDB_CLIENT_SECRET` in your environment variables.
 
-| ![IGDB_Creation](https://github.com/rommapp/romm/assets/3247106/7a93bf68-f6d9-46a5-ab72-719f2d5ec9d3) | ![IGDB_Secret](https://github.com/rommapp/romm/assets/3247106/7a9dc056-52be-41c4-aec5-e2758aa520b5) |
+| ![IGDB Creation](https://github.com/rommapp/romm/assets/3247106/7a93bf68-f6d9-46a5-ab72-719f2d5ec9d3) | ![IGDB Secret](https://github.com/rommapp/romm/assets/3247106/7a9dc056-52be-41c4-aec5-e2758aa520b5) |
 | ----------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
 
 ## MobyGames

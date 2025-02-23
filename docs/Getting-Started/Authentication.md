@@ -2,7 +2,7 @@ RomM provides support for various forms of authentication, granting flexibility 
 
 ### Setup
 
-You'll want to set the following env variable before starting RomM:
+You'll want to set the following environment variable before starting RomM:
 
 - `ROMM_AUTH_SECRET_KEY` is required and can be generated with `openssl rand -hex 32`
 
@@ -34,13 +34,13 @@ curl https://romm.local/api/platforms -H 'Authorization: Basic YWRtaW46aHVudGVyM
 
 Along with the above forms of authentication, we've added an endpoint to generate expiring, scope-limited authentication tokens (`/api/token`). Successfully authenticating with that endpoint with return an `access_token` valid for 15 minutes, and a [`refresh_token`](https://oauth.net/2/grant-types/refresh-token/) valid for 2 weeks. The `refresh_token` can be used to generate a new `access_token` when needed.
 
-The `/api/token` endpoint requires a username, password, and a list of [scopes](https://oauth.net/2/scope/) in the format `read:roms write:roms read:platforms ...`. The list of scopes and endpoints are available to browse via Swagger UI or Redoc (see next section).
+The `/api/token` endpoint requires a username, password, and a list of [scopes](https://oauth.net/2/scope/) in the format `read:roms write:roms read:platforms ...`. The list of scopes and endpoints are available to browse via Swagger UI or ReDoc (see next section).
 
 **Note: As of now, only the legacy [password grant type](https://oauth.net/2/grant-types/password/) is supported.** We plan to eventually add support for [Client Credentials](https://oauth.net/2/grant-types/client-credentials/).
 
 ### OpenAPI
 
-The API endpoints are fully documented and compliant with the OpenAPI specification. Explore the API endpoints using the Swagger UI interface at `/api/docs` and the Redoc interface at `/api/redoc`, or view the raw JSON at `/openapi.json`.
+The API endpoints are fully documented and compliant with the OpenAPI specification. Explore the API endpoints using the Swagger UI interface at `/api/docs` and the ReDoc interface at `/api/redoc`, or view the raw JSON at `/openapi.json`.
 
 For more information on OpenAPI, visit the [OpenAPI Specification](https://www.openapis.org/) website.
 

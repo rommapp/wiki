@@ -22,7 +22,7 @@ OIDC (OpenID Connect) is an identity layer built on top of OAuth2. While OAuth2 
 
 ### Step 1: Install and Configure Pocket ID
 
-Before setting up the OIDC client, ensure that Pocket ID is installed and running by following the [github.](https://github.com/stonith404/pocket-id#setup)
+Before setting up the OIDC client, ensure that Pocket ID is installed and running by following the [setup guide](https://github.com/stonith404/pocket-id#setup).
 
 ### Step 2: Add a client
 

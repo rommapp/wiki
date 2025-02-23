@@ -15,4 +15,4 @@ This error is known to happen on Chrome, but could happen in other browsers; man
 
 ### Error: `400 Bad Request` on the Websocket endpoint
 
-If you're running RomM behind a reverse-proxy (Caddy, NGINX, etc.), ensure that websockets are supported and enabled. This may vary depending on the reverse proxy solution being used. In the case of Nginx Proxy Manager, enable the "Websockets Support" toggle when editing the proxy host.
+If you're running RomM behind a reverse-proxy (Caddy, Nginx, etc.), ensure that Websockets are supported and enabled. This may vary depending on the reverse proxy solution being used. In the case of Nginx Proxy Manager, enable the "Websockets Support" toggle when editing the proxy host.

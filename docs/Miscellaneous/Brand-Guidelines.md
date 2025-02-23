@@ -3,12 +3,12 @@ We’ve put together some guidelines for those anyone who wants to use our name 
 ## The Logo
 
 <div align="center">
-  <img src="resources/romm/logo.svg" height="180px" width="180px" alt="romm logo">
+  <img src="resources/romm/logo.svg" height="180px" width="180px" alt="RomM logo">
   <br />
   <br />
 </div>
 
-The logo should always be used in its standard colors: <img src="resources/romm/ede5f8.png" height="16px" width="16px"> #ede5f8, <img src="resources/romm/bea4e1.png" height="16px" width="16px"> #bea4e1, <img src="resources/romm/371f69.png" height="16px" width="16px"> #371f69, <img src="resources/romm/553e98.png" height="16px" width="16px"> #553e98, <img src="resources/romm/e6c7a7.png" height="16px" width="16px"> #e6c7a7, and <img src="resources/romm/e1a38d.png" height="16px" width="16px"> #e1a38d.
+The logo should always be used in its standard colors: <img src="resources/romm/ede5f8.png" height="16px" width="16px" alt="#ede5f8"> #ede5f8, <img src="resources/romm/bea4e1.png" height="16px" width="16px" alt="#bea4e1"> #bea4e1, <img src="resources/romm/371f69.png" height="16px" width="16px" alt="#371f69"> #371f69, <img src="resources/romm/553e98.png" height="16px" width="16px" alt="#553e98"> #553e98, <img src="resources/romm/e6c7a7.png" height="16px" width="16px" alt="#e6c7a7"> #e6c7a7, and <img src="resources/romm/e1a38d.png" height="16px" width="16px" alt="e1a38d"> #e1a38d.
 
 ## Do these things
 
