@@ -9,6 +9,7 @@ edit_uri: "edit/main/docs/"
 theme:
     name: material
     logo: resources/romm/logo.png
+    favicon: resources/romm/logo.png
     features:
         - navigation.instant
         - navigation.instant.prefetch
