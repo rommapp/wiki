@@ -42,6 +42,25 @@ uv run mkdocs serve
 
 We welcome all types of contributions, from simple typo fixes to new content. If you'd like to contribute, please read our [code of conduct](CODE_OF_CONDUCT.md).
 
+### Setting up the linter
+
+We use [Trunk](https://trunk.io) for linting, which combines multiple linters with sensible defaults and a single configuration file. You'll need to install the Trunk CLI to use it.
+
+#### - Install the Trunk CLI
+
+```sh
+curl https://get.trunk.io -fsSL | bash
+```
+
+Alternative installation methods can be found [here](https://docs.trunk.io/check/usage#install-the-cli). On commit, the linter will run automatically. To run it manually, use the following commands:
+
+```sh
+trunk fmt
+trunk check
+```
+
+## Social
+
 Join us on Discord, where you can ask questions, submit ideas, get help, showcase your collection, and discuss RomM with other users.
 
 [![discord-invite]][discord-invite-url]

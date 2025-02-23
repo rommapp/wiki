@@ -24,8 +24,8 @@ lint:
         - trufflehog@3.88.12
 actions:
     disabled:
-        - trunk-announce
         - trunk-check-pre-push
-        - trunk-fmt-pre-commit
     enabled:
+        - trunk-announce
+        - trunk-fmt-pre-commit
         - trunk-upgrade-available
