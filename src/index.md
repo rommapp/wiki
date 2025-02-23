@@ -7,7 +7,7 @@ hide:
 
 <img src="./resources/romm/logotype.png" alt="RomM Logo">
 /// caption
-Welcome to the **RomM Project**, the ecosystem around the premier self-hosted, open source rom manager.
+Welcome to the **RomM Project**, the premier self-hosted, open source rom manager.
 ///
 
 <div style="text-align: center">
