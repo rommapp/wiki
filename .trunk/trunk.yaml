@@ -17,15 +17,15 @@ runtimes:
 # This is the section where you manage your linters. (https://docs.trunk.io/check/configuration)
 lint:
     enabled:
-        - vale@3.9.5
+        # - vale@3.9.5
         - git-diff-check
         - markdownlint@0.44.0
         - prettier@3.5.1
         - trufflehog@3.88.12
 actions:
     disabled:
-        - trunk-check-pre-push
     enabled:
         - trunk-announce
         - trunk-fmt-pre-commit
         - trunk-upgrade-available
+        - trunk-check-pre-push
