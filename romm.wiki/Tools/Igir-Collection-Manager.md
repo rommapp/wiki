@@ -17,20 +17,23 @@ The directory structure is important for running the bulk ROM renaming script. B
 ### Initial Setup Steps
 
 1. Create a working copy of your ROMs:
-   ```bash
-   cp -r roms/ roms-unverified/
-   ```
-   This provides a safe working environment and allows for easy script adjustment if needed.
+
+    ```bash
+    cp -r roms/ roms-unverified/
+    ```
+
+    This provides a safe working environment and allows for easy script adjustment if needed.
 
 2. Download DAT Files:
-   - For cartridge-based systems:
-     - Visit [No-Intro.org Daily Download](https://datomatic.no-intro.org/index.php?page=download&op=daily)
-     - Download the latest DAT compilation
-   - For optical media (e.g., PlayStation):
-     - Visit [redump.org](http://redump.org/downloads/)
-     - Download platform-specific DAT files
 
-   Extract the DAT files to your `dats` directory. You can optionally extract a subset of the .dat files into the directory instead.
+    - For cartridge-based systems:
+        - Visit [No-Intro.org Daily Download](https://datomatic.no-intro.org/index.php?page=download&op=daily)
+        - Download the latest DAT compilation
+    - For optical media (e.g., PlayStation):
+        - Visit [redump.org](http://redump.org/downloads/)
+        - Download platform-specific DAT files
+
+    Extract the DAT files to your `dats` directory. You can optionally extract a subset of the .dat files into the directory instead.
 
 ## Configuration
 
@@ -61,6 +64,7 @@ time npx -y igir@latest \
 ```
 
 Make the script executable:
+
 ```bash
 chmod a+x igir-romm-cleanup.sh
 ```
@@ -103,12 +107,14 @@ done
 This will find any directory with `(Disc` in the name and move the files into a new directory without the `(Disc #)` string. For example:
 
 Before:
+
 ```bash
 Final Fantasy VII (Disc 1) (USA)
 Final Fantasy VII (Disc 2) (USA)
 ```
 
 Gets combined to:
+
 ```bash
 Final Fantasy VII (USA)
 ```

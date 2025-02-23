@@ -1,5 +1,7 @@
 ## Prerequisites
+
 This guide assumes you're familiar with Docker and have basic knowledge of server management. You'll need:
+
 - A Synology NAS or similar server
 - Docker installed
 - Basic command line knowledge
@@ -27,7 +29,7 @@ mkdir -p /volume1/data/media/games/library/roms
 mkdir -p /volume1/data/media/games/library/bios
 ```
 
-Note: For supported platforms and their specific folder names, refer to the [official RomM wiki](https://github.com/rommapp/romm/wiki/Supported-Platforms).
+Note: For supported platforms and their specific folder names, refer to the [official RomM wiki](../Platforms-and-Players/Supported-Platforms.md).
 
 #### Docker Data Folders
 
@@ -54,11 +56,12 @@ Generate your authentication key using:
 openssl rand -hex 32
 > 03a054b6ca27e0107c5eed552ea66bacd9f3a2a8a91e7595cd462a593f9ecd09
 ```
+
 Save the output - you'll need it for the `ROMM_AUTH_SECRET_KEY` in your configuration.
 
 #### API Integration Setup
 
-RomM currecntly supports 3 metadata sources: IGDB, MobyGames and SteamGridDB. Follow the dedicated wiki page for  [API key generation](Generate-Api-Keys.md) to set up your API keys. We recommend setting up IGDG at the minimum.
+RomM currecntly supports 3 metadata sources: IGDB, MobyGames and SteamGridDB. Follow the dedicated wiki page for [API key generation](../Getting-Started/Generate-API-Keys.md) to set up your API keys. We recommend setting up IGDG at the minimum.
 
 ### 4. MariaDB Configuration
 
@@ -75,59 +78,59 @@ Create a `docker-compose.yml` file with the following content:
 
 ```yaml
 services:
-  romm:
-    image: rommapp/romm:latest
-    container_name: romm
-    restart: unless-stopped
-    environment:
-      - PUID=1234 #CHANGE_TO_YOUR_UID
-      - PGID=12345 #CHANGE_TO_YOUR_GID
-      - TZ=US/New_York #CHANGE_TO_YOUR_TZ
-      - DB_HOST=mariadb-romm
-      - DB_NAME=romm
-      - DB_ROOT_PASSWORD=DB_ROOT_PASSWORD
-      - DB_USER=romm-user
-      - DB_PASSWD=DB_PASSWD
-      - DB_PORT=3306
-      - ROMM_AUTH_SECRET_KEY= # Add your generated key
-      - IGDB_CLIENT_ID= # Add your IGDB ID
-      - IGDB_CLIENT_SECRET= # Add your IGDB secret
-    volumes:
-      - /volume1/docker/romm/resources:/romm/resources
-      - /volume1/docker/romm/redis-data:/redis-data
-      - /volume1/data/media/games/library:/romm/library
-      - /volume1/data/media/games/assets:/romm/assets
-      - /volume1/data/media/games/config:/romm/config
-    ports:
-      - 7676:8080/tcp
-    network_mode: rommbridge
-    depends_on:
-      mariadb-romm:
-        condition: service_healthy
+    romm:
+        image: rommapp/romm:latest
+        container_name: romm
+        restart: unless-stopped
+        environment:
+            - PUID=1234 #CHANGE_TO_YOUR_UID
+            - PGID=12345 #CHANGE_TO_YOUR_GID
+            - TZ=US/New_York #CHANGE_TO_YOUR_TZ
+            - DB_HOST=mariadb-romm
+            - DB_NAME=romm
+            - DB_ROOT_PASSWORD=DB_ROOT_PASSWORD
+            - DB_USER=romm-user
+            - DB_PASSWD=DB_PASSWD
+            - DB_PORT=3306
+            - ROMM_AUTH_SECRET_KEY= # Add your generated key
+            - IGDB_CLIENT_ID= # Add your IGDB ID
+            - IGDB_CLIENT_SECRET= # Add your IGDB secret
+        volumes:
+            - /volume1/docker/romm/resources:/romm/resources
+            - /volume1/docker/romm/redis-data:/redis-data
+            - /volume1/data/media/games/library:/romm/library
+            - /volume1/data/media/games/assets:/romm/assets
+            - /volume1/data/media/games/config:/romm/config
+        ports:
+            - 7676:8080/tcp
+        network_mode: rommbridge
+        depends_on:
+            mariadb-romm:
+                condition: service_healthy
 
-  mariadb-romm:
-    image: mariadb:10.7
-    container_name: mariadb-romm
-    restart: unless-stopped
-    environment:
-      - MARIADB_ROOT_PASSWORD=MARIADB_ROOT_PASSWORD
-      - PUID=1234 #CHANGE_TO_YOUR_UID
-      - PGID=12345 #CHANGE_TO_YOUR_GID
-      - TZ=US/New_York #CHANGE_TO_YOUR_TZ
-      - MARIADB_DATABASE=romm
-      - MARIADB_USER=romm-user
-      - MARIADB_PASSWORD=MARIADB_PASSWORD
-    ports:
-      - "3309:3306"
-    network_mode: rommbridge
-    volumes:
-      - /volume1/docker/mariadb-romm:/var/lib/mysql
-    healthcheck:
-      test: ["CMD", "healthcheck.sh", "--su-mysql", "--connect"]
-      timeout: 20s
-      retries: 10
-      start_period: 30s
-      interval: 10s
+    mariadb-romm:
+        image: mariadb:10.7
+        container_name: mariadb-romm
+        restart: unless-stopped
+        environment:
+            - MARIADB_ROOT_PASSWORD=MARIADB_ROOT_PASSWORD
+            - PUID=1234 #CHANGE_TO_YOUR_UID
+            - PGID=12345 #CHANGE_TO_YOUR_GID
+            - TZ=US/New_York #CHANGE_TO_YOUR_TZ
+            - MARIADB_DATABASE=romm
+            - MARIADB_USER=romm-user
+            - MARIADB_PASSWORD=MARIADB_PASSWORD
+        ports:
+            - "3309:3306"
+        network_mode: rommbridge
+        volumes:
+            - /volume1/docker/mariadb-romm:/var/lib/mysql
+        healthcheck:
+            test: ["CMD", "healthcheck.sh", "--su-mysql", "--connect"]
+            timeout: 20s
+            retries: 10
+            start_period: 30s
+            interval: 10s
 ```
 
 ### 6. Initial Launch

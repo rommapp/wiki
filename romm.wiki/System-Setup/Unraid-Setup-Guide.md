@@ -16,8 +16,8 @@ MariaDB is required to run RomM, so install it from the plugin registry. Only th
 
 Now fill in all the environment variables; descriptions of the options and sensible defaults are listed in the [example docker-compose.yml](https://github.com/rommapp/romm/blob/release/examples/docker-compose.example.yml) file.
 
-> [!WARNING]
-> The network type must be set to "Custom: romm"
+!!! warning
+    The network type must be set to "Custom: romm"
 
 ![mariadb environment variables](https://github.com/user-attachments/assets/a11906c5-25b2-46f1-906b-451a9ee39dca)
 
@@ -31,8 +31,8 @@ From the Unraid dashboard, click `APPS` in the navbar. In the search bar, search
 
 Configure the required environment variables, ports and paths as per the [example docker-compose.yml](https://github.com/rommapp/romm/blob/release/examples/docker-compose.example.yml) file.
 
-> [!WARNING]
-> The network type must also be set to "Custom: romm"
+!!! warning
+    The network type must also be set to "Custom: romm"
 
 ![romm docker tab](https://github.com/user-attachments/assets/4c4210c2-ed00-4790-a945-65cbe33620b0)
 
@@ -49,7 +49,6 @@ Apply the changes, then head to the `DOCKER` tab. You should see both containers
 [DemonWarriorTech](https://www.youtube.com/@DemonWarriorTech) has published [How to Install RomM on Unraid (Beginner Friendly)](https://www.youtube.com/watch?v=Oo5obHNy2iw) on installing and running RomM on Unraid for Beginners with an in depth instructions and explanation of the software install and how to use it.
 
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/Oo5obHNy2iw/0.jpg)](https://www.youtube.com/watch?v=Oo5obHNy2iw)
-
 
 [AlienTech42](https://www.youtube.com/@AlienTech42) has published [a great video](https://www.youtube.com/watch?v=ls5YcsFdwLQ) on installing and running RomM on Unraid. While a bit out of date vis-a-vis install instructions, it's still very useful for general setup and debugging. Check it out!
 

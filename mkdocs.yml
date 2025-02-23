@@ -1,5 +1,138 @@
 site_name: RomM Docs
 docs_dir: romm.wiki
 site_url: https://wiki.romma.app/
+site_author: RomM Team
+site_description: Your beautiful, powerful, self-hosted rom manager
+repo_url: "https://github.com/rommapp/wiki"
+repo_name: rommapp/wiki
 theme:
-  name: material
+    name: material
+    logo: resources/romm/logo.png
+    features:
+        - navigation.instant
+        - navigation.instant.prefetch
+        - navigation.footer
+        - navigation.indexes
+        - navigation.tracking
+        - navigation.top
+        - search.suggest
+        - search.highlight
+        - content.tabs.link
+        - content.code.annotation
+        - content.code.copy
+        - content.action.edit
+        - content.action.view
+    language: en
+    palette:
+        # Dark mode
+        - scheme: slate
+          toggle:
+              icon: material/toggle-switch
+              name: Switch to light mode
+          primary: custom
+          accent: custom
+        # Light mode
+        - scheme: default
+          toggle:
+              icon: material/toggle-switch-off-outline
+              name: Switch to dark mode
+          primary: custom
+          accent: custom
+
+plugins:
+    - search
+    - mkdocs-video
+    - social:
+          cards_layout_options:
+              font_family: Roboto
+              background_color: "#371f69"
+              color: "#ede5f8"
+              logo: romm.wiki/assets/images/romm-logo.png
+              title: RomM Docs
+              description: Your beautiful, powerful, self-hosted rom manager
+    - glightbox:
+          skip_classes:
+              - skip-lightbox
+    - markdownextradata: {}
+    - literate-nav:
+          nav_file: Navigation.md
+    - git-revision-date-localized:
+          enable_creation_date: true
+          type: timeago
+    # - git-committers:
+    #     repository: MisterCalvin/romm-mkdocs
+    #     branch: develop
+    #     exclude_committers:
+    #       - "web-flow"  # GitHub web UI edits
+    #     token: !ENV GITHUB_TOKEN
+
+markdown_extensions:
+    - pymdownx.blocks.caption
+    - pymdownx.highlight:
+          anchor_linenums: true
+    - pymdownx.inlinehilite
+    # - pymdownx.snippets:
+    #     base_path:
+    #       - romm.wiki
+    #       - docs/assets/snippets
+    #     check_paths: true
+    - admonition
+    - pymdownx.arithmatex:
+          generic: true
+    - footnotes
+    - pymdownx.details
+    - pymdownx.superfences
+    - pymdownx.mark
+    - attr_list
+    - pymdownx.emoji:
+          emoji_index: !!python/name:material.extensions.emoji.twemoji
+          emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+copyright: Copyright &copy; 2025 RomM Team
+
+extra:
+    social:
+        - icon: fontawesome/brands/github
+          link: https://github.com/rommapp/romm
+          name: rommapp/romm
+        - icon: fontawesome/brands/discord
+          link: https://discord.com/invite/RGPJHNMMwJ
+          name: RomM Discord Channel
+        - icon: fontawesome/solid/globe
+          link: https://romm.app/
+          name: romm.app
+
+    analytics:
+        provider: google
+        property: !ENV GOOGLE_PROPERTY_ID
+        feedback:
+            title: Was this page helpful?
+            ratings:
+                - icon: material/emoticon-happy-outline
+                  name: This page was helpful
+                  data: 1
+                  note: >-
+                      Thanks for your feedback!
+                - icon: material/emoticon-sad-outline
+                  name: This page could be improved
+                  data: 0
+                  note: >-
+                      Thanks for your feedback!
+
+    env:
+        branch: !ENV [GITHUB_REF_NAME, "main"]
+        commit_sha: !ENV [commit_sha, ""] # Will be empty on main, show SHA on develop
+        username: !ENV GITHUB_REPOSITORY_OWNER
+        repo_name: !ENV GITHUB_REPOSITORY
+
+    #version:
+    #provider: mike
+    #default: latest
+    #pre_release: true
+
+extra_css:
+    - resources/css/extra.css
+
+watch:
+    - romm.wiki
+    - romm.wiki/resources

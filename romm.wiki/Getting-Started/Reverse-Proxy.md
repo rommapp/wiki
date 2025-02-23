@@ -92,35 +92,36 @@ Items marked with ❗ are important to set, as RomM may not correctly otherwise!
 
 #### ⚡ Details
 
-* Domain Names: `romm.mydomain.com` (replace mydomain with your own)* Scheme: `http`
-* Forward Hostname/IP: <device IP> (like 192.168.X.X)
-* Forward Port: `8080`
-* Cache Assets: `off`
-* Block Common Exploits: `on`
-* Websockets Support: `on` ❗ 
-* Access List: -
+- Domain Names: `romm.mydomain.com` (replace mydomain with your own)\* Scheme: `http`
+- Forward Hostname/IP: <device IP> (like 192.168.X.X)
+- Forward Port: `8080`
+- Cache Assets: `off`
+- Block Common Exploits: `on`
+- Websockets Support: `on` ❗
+- Access List: -
 
 #### 🛡️ SSL
 
 Strongly recommended, but only required if you plan to secure your site (use HTTPS)
 
-* SSL Certificate: "Request a new SSL Certificate"
-* Force SSL: `on`
-* HTTP/2 Support: `on`
-* HSTS Enabled: `off`
-* Email Address for Let's Encrypt: <your email address>
-* I Agree to the TOS: `on`
+- SSL Certificate: "Request a new SSL Certificate"
+- Force SSL: `on`
+- HTTP/2 Support: `on`
+- HSTS Enabled: `off`
+- Email Address for Let's Encrypt: <your email address>
+- I Agree to the TOS: `on`
 
 #### ⚙️ Advanced
 
-Custom Nginx Confguration ❗ 
+Custom Nginx Confguration ❗
+
 ```
 proxy_max_temp_file_size 0;
 ```
 
-|Details|SSL|Advanced|
-|---|---|---|
-|![image](https://github.com/user-attachments/assets/e106a8e9-8b27-41ef-8ba2-d43c3b68b269)|![image2](https://github.com/user-attachments/assets/6c82c785-792a-410a-80f2-d95839cba47b)|![image3](https://github.com/user-attachments/assets/566ae834-99b5-42f3-b46b-306b8f73b5b4)|
+| Details                                                                                   | SSL                                                                                        | Advanced                                                                                   |
+| ----------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ |
+| ![image](https://github.com/user-attachments/assets/e106a8e9-8b27-41ef-8ba2-d43c3b68b269) | ![image2](https://github.com/user-attachments/assets/6c82c785-792a-410a-80f2-d95839cba47b) | ![image3](https://github.com/user-attachments/assets/566ae834-99b5-42f3-b46b-306b8f73b5b4) |
 
 ## Traefik
 
@@ -129,32 +130,32 @@ proxy_max_temp_file_size 0;
 ```yml
 http:
     romsdomainse:
-      entryPoints:
-        - "https"
-      rule: "Host(`roms.domain.se`)"
-      middlewares:
-        - default-headers
-        - https-redirectscheme
-      tls:
-        certResolver: http
-      service: romsdomainse
+        entryPoints:
+            - "https"
+        rule: "Host(`roms.domain.se`)"
+        middlewares:
+            - default-headers
+            - https-redirectscheme
+        tls:
+            certResolver: http
+        service: romsdomainse
 
 services:
     romsdomainse:
-      loadBalancer:
-        servers:
-          - url: "http://192.168.1.100:8080"
-        passHostHeader: true
+        loadBalancer:
+            servers:
+                - url: "http://192.168.1.100:8080"
+            passHostHeader: true
 ```
 
 ### Using labels in docker compose
 
 ```yml
 labels:
-  - "traefik.enable=true"
-  - "traefik.http.services.romm.loadbalancer.server.port=8080"
-  - "traefik.http.routers.romm.rule=Host(`romm.YOUR_DOMAIN.com`)"
-  - "traefik.http.routers.romm.entrypoints=websecure"
-  - 'traefik.http.routers.romm.tls=true'
-  - 'traefik.http.routers.romm.tls.certresolver=https'
+    - "traefik.enable=true"
+    - "traefik.http.services.romm.loadbalancer.server.port=8080"
+    - "traefik.http.routers.romm.rule=Host(`romm.YOUR_DOMAIN.com`)"
+    - "traefik.http.routers.romm.entrypoints=websecure"
+    - "traefik.http.routers.romm.tls=true"
+    - "traefik.http.routers.romm.tls.certresolver=https"
 ```

@@ -2,14 +2,14 @@
 
 Scheduled tasks can be enabled and configured with the following environment variables:
 
-|Variable|Description|Value|
-|---|---|:---:|
-|ENABLE_SCHEDULED_RESCAN|Enable scheduled rescanning of library|`true`|
-|SCHEDULED_RESCAN_CRON|Cron expression for scheduled rescanning|`"0 3 * * *"`|
-|ENABLE_SCHEDULED_UPDATE_SWITCH_TITLEDB|Enable scheduled updating of Switch TitleDB index|`true`|
-|SCHEDULED_UPDATE_SWITCH_TITLEDB_CRON|Cron expression for scheduled updating of Switch TitleDB|`"0 4 * * *"`|
-|ENABLE_SCHEDULED_UPDATE_MAME_XML|Enable scheduled updating of MAME XML index|`true`|
-|SCHEDULED_UPDATE_MAME_XML_CRON|Cron expression for scheduled updating of MAME XML|`"0 5 * * *"`|
+| Variable                               | Description                                              |     Value     |
+| -------------------------------------- | -------------------------------------------------------- | :-----------: |
+| ENABLE_SCHEDULED_RESCAN                | Enable scheduled rescanning of library                   |    `true`     |
+| SCHEDULED_RESCAN_CRON                  | Cron expression for scheduled rescanning                 | `"0 3 * * *"` |
+| ENABLE_SCHEDULED_UPDATE_SWITCH_TITLEDB | Enable scheduled updating of Switch TitleDB index        |    `true`     |
+| SCHEDULED_UPDATE_SWITCH_TITLEDB_CRON   | Cron expression for scheduled updating of Switch TitleDB | `"0 4 * * *"` |
+| ENABLE_SCHEDULED_UPDATE_MAME_XML       | Enable scheduled updating of MAME XML index              |    `true`     |
+| SCHEDULED_UPDATE_MAME_XML_CRON         | Cron expression for scheduled updating of MAME XML       | `"0 5 * * *"` |
 
 ### Scheduled rescan
 
@@ -33,10 +33,10 @@ RomM can also monitor the filesystem for events (files created/moved/deleted) an
 
 The watcher can be enabled and configured with the following environment variables:
 
-|Variable|Description|Value|
-|---|---|:---:
-|ENABLE_RESCAN_ON_FILESYSTEM_CHANGE|Enable rescanning of library when filesystem changes|`true`
-|RESCAN_ON_FILESYSTEM_CHANGE_DELAY|Delay in minutes before rescanning library when filesystem changes|`5`|
+| Variable                           | Description                                                        | Value  |
+| ---------------------------------- | ------------------------------------------------------------------ | :----: |
+| ENABLE_RESCAN_ON_FILESYSTEM_CHANGE | Enable rescanning of library when filesystem changes               | `true` |
+| RESCAN_ON_FILESYSTEM_CHANGE_DELAY  | Delay in minutes before rescanning library when filesystem changes |  `5`   |
 
 The watcher will monitor the `/library/roms` folder for changes to the filesystem, such as files being added, moved or deleted. It will ignore certain events (like modifying the file content or metadata), and will skip default OS files (like `.DS_Store` on mac).
 

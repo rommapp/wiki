@@ -1,4 +1,4 @@
 [Ruffle](https://ruffle.rs/) is a web-based player for flash games. With flash now dscontinued, this is the best way to play your flash collection in the browser.
 
-> [!NOTE]
-> **Ruffle will only play games stored in platform folders called `flash` or `browser`.**
+!!! important
+    **Ruffle will only play games stored in platform folders called `flash` or `browser`.**

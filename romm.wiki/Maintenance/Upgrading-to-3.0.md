@@ -40,7 +40,7 @@ As Redis is [required for authentication](https://github.com/zurdi15/romm/wiki/A
 
 ## Configuration folder
 
-Mounting the `config.yml` file is now done by mounting a `config` folder.. Place your existing ``config.yml`` file inside a folder and bind it to `/romm/config`:
+Mounting the `config.yml` file is now done by mounting a `config` folder.. Place your existing `config.yml` file inside a folder and bind it to `/romm/config`:
 
 ```
 - /path/to/config:/romm/config
