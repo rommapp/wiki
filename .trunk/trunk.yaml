@@ -23,7 +23,6 @@ lint:
         - prettier@3.5.1
         - trufflehog@3.88.12
 actions:
-    disabled:
     enabled:
         - trunk-announce
         - trunk-fmt-pre-commit

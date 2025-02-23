@@ -1,3 +1,5 @@
+<!-- trunk-ignore-all(prettier) -->
+
 This quick start guide will help you get a RomM instance up and running. It is split into 3 parts:
 
 - Prepare
@@ -45,6 +47,7 @@ Then copy the output and save it to the `ROMM_AUTH_SECRET_KEY` variable in the d
 
 Now that we have everything gathered, we can begin getting your instance set up!
 
+<!-- trunk-ignore-begin(markdownlint/MD040) -->
 1. Download a copy of the latest [docker-compose.example.yml](https://github.com/rommapp/romm/blob/release/examples/docker-compose.example.yml) file from GitHub
 2. Edit the file and modify the following values to configure the database
     - `MYSQL_ROOT_PASSWORD`: Sets the root password of the database. Use a unique and secure password (_use a password generator for simplicity_)
@@ -61,35 +64,33 @@ Now that we have everything gathered, we can begin getting your instance set up!
     - `/path/to/config`: Path to the directory where you will store the config.yml
 5. Save the file as _docker-compose.yml_ instead of _docker-compose.example.yml_. It should look something like this:
 
-<!-- prettier-ignore -->
-???+ example "Example Docker Compose"
-    ``` yaml
-    --8<-- "quick-start.docker-compose.yml"
-    ```
+    <!-- prettier-ignore -->
+    ???+ example "Example Docker Compose"
+        ``` yaml
+        --8<-- "quick-start.docker-compose.yml"
+        ```
 
 6. Open the terminal and navigate to the directory containing the docker-compose file
-7. Run `docker compose up -d` to kick off the docker pull. You will see it pull the container and set up the volumes and network:
-
-```asciinema-player
-{
-    "file": "resources/asciinema/quick-start-docker-compose.cast",
-    "title": "RomM docker compose install",
-    "preload": true,
-    "loop": true,
-    "auto_play": true,
-    "cols": 140,
-    "rows": 30,
-    "fit": "width",
-    "terminal_font_size": "small",
-    "terminal_line_height": "1.2",
-    "terminal_font_family": "Roboto Mono, Monaco, Consolas, monospace"
-}
+7. Run `docker compose up -d` to kick off the docker pull. You will see it pull the container and set up the volumes and network:```asciinema-player
+    {
+        "file": "resources/asciinema/quick-start-docker-compose.cast",
+        "title": "RomM docker compose install",
+        "preload": true,
+        "loop": true,
+        "auto_play": true,
+        "cols": 140,
+        "rows": 30,
+        "fit": "width",
+        "terminal_font_size": "small",
+        "terminal_line_height": "1.2",
+        "terminal_font_family": "Roboto Mono, Monaco, Consolas, monospace"
+    }
 ```
-
 8. Run `docker ps -f name=romm` to verify that the containers are running
 9. Open a web browser and navigate to `http://localhost:8080`, where you should be greeted with the RomM setup page
 10. Go through the setup wizard, setting your admin username and password
 11. Log in with the credentials you set in the setup flow
+<!-- trunk-ignore-end(markdownlint/MD040) -->
 
 ## Configure
 
@@ -119,3 +120,4 @@ This method is generally the fastest and recommended for first time setup
 6. Navigate to _Library_ -> _Scan_
 7. The system will now begin scanning the rom files and applying metadata to them. You can click on any of the items that it has tagged to see the metadata it pulled without having to stop the scan
 8. After the scan completes, click the RomM logo to go back to the main screen. You should see the platforms and recent games it has scanned. You are now ready to rock and RomM!
+```
