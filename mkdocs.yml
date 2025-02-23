@@ -1,6 +1,5 @@
 site_name: RomM Docs
-docs_dir: src
-site_dir: docs
+docs_dir: docs
 site_url: https://wiki.romma.app/
 site_author: RomM Team
 site_description: Your beautiful, powerful, self-hosted rom manager
@@ -48,7 +47,7 @@ plugins:
               font_family: Roboto
               background_color: "#371f69"
               color: "#ede5f8"
-              logo: src/assets/images/romm-logo.png
+              logo: docs/assets/images/romm-logo.png
               title: RomM Docs
               description: Your beautiful, powerful, self-hosted rom manager
     - glightbox:
@@ -68,8 +67,8 @@ markdown_extensions:
     - pymdownx.inlinehilite
     - pymdownx.snippets:
         base_path:
-          - src
-          - src/resources/snippets
+          - docs
+          - docs/resources/snippets
         check_paths: true
     - admonition
     - pymdownx.arithmatex:
@@ -97,15 +96,9 @@ extra:
           link: https://romm.app/
           name: romm.app
 
-    env:
-        branch: !ENV [GITHUB_REF_NAME, "main"]
-        commit_sha: !ENV [commit_sha, ""] # Will be empty on main, show SHA on develop
-        username: !ENV GITHUB_REPOSITORY_OWNER
-        repo_name: !ENV GITHUB_REPOSITORY
-
 extra_css:
-    - resources/css/extra.css
+    - resources/css/theme.css
 
 watch:
-    - src
-    - src/resources
+    - docs
+    - docs/resources
