@@ -38,6 +38,8 @@ theme:
               name: Switch to dark mode
           primary: custom
           accent: custom
+    version:
+        provider: mike
 
 plugins:
     - search
