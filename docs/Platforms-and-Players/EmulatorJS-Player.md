@@ -1,11 +1,14 @@
-[EmulatorJS](https://emulatorjs.org/) is a web-based emulator for various system; that is, it allows you to run old games in your web browser. It's based on [Emscripten](https://emscripten.org/), which is a toolchain for compiling C and C++ code to WebAssembly.
+[EmulatorJS](https://emulatorjs.org/) is a web-based emulator for various system; that is, it allows you to run old games in your web browser. It's based on [`Emscripten`](https://emscripten.org/), which is a toolchain for compiling C and C++ code to WebAssembly.
 
+<!-- prettier-ignore -->
 !!! warning
     Due to a [change by Apple in iOS 18.2](https://bugs.webkit.org/show_bug.cgi?id=284752), emulation is severely limited, and likely non-functional, on iOS devices.
 
+<!-- prettier-ignore -->
 !!! warning
     PSP emulation with the PPSSPP core requires [special setup with a reverse proxy](https://emulatorjs.org/docs/options#ejs_threads), or launching Chrome browser with the `--disable-web-security` and `--enable-features=SharedArrayBuffer` flags, which WE STRONGLY DISCOURAGE as it disables important security features.
 
+<!-- prettier-ignore -->
 !!! warning
     Emulation is a complex and resource-intensive process. As such, it may not work well in all browser, especially older or less powerful ones. If you're having trouble running a game, try using a different browser or device.
 

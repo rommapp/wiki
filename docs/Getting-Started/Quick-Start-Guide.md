@@ -12,18 +12,19 @@ This guide will assume that you already have the following done, if not - stop h
 - OpenSSL installed (optional)
 - A Twitch account (optional)
     - 2-factor authentication set up on your Twitch account
-    - _This is required to get a dev account and an IGDB key_
+    - _This is required to get a developer account and an IGDB key_
 - A MobyGames account (optional)
-- Your Roms organized in the correct format
+- Your ROMs organized in the correct format
 
+<!-- prettier-ignore -->
 !!! warning
     Not setting up RomM with a metadata API will work for basic operation but can cause issues with, for instance, the Playnite plugin. It is recommended to setup IGDB API keys to avoid issues during setup.
 
-#### Twitch and MobyGames API Keys
+### Twitch and MobyGames API Keys
 
 Head over to [API key docs](../Getting-Started/Generate-API-Keys.md) to get your Twitch and/or MobyGames keys, then come back here
 
-#### Generating Authentication Keys
+### Generating Authentication Keys
 
 This step will generate a key that is used in the authorization of RomM. Without this, you will be unable to log in and use the platform
 
@@ -58,8 +59,9 @@ Now that we have everything gathered, we can begin getting your instance set up!
     - `/path/to/library`: Path to the directory where your rom files will be stored
     - `/path/to/assets`: Path to the directory where you will store your saves, etc
     - `/path/to/config`: Path to the directory where you will store the config.yml
-5. Save the file as _docker-compose.yml_ instead of _docker-compose.example.yml_. It should look soomething like this:
+5. Save the file as _docker-compose.yml_ instead of _docker-compose.example.yml_. It should look something like this:
 
+<!-- prettier-ignore -->
 ???+ example "Example Docker Compose"
     ``` yaml
     --8<-- "quick-start.docker-compose.yml"
@@ -68,7 +70,7 @@ Now that we have everything gathered, we can begin getting your instance set up!
 6. Open the terminal and navigate to the directory containing the docker-compose file
 7. Run `docker compose up -d` to kick off the docker pull. You will see it pull the container and set up the volumes and network:
 
-<img src="https://github.com/rommapp/romm/assets/3247106/ee1c96aa-e3a3-438b-ac18-9f26dad7b9db" width="780">
+<img src="https://github.com/rommapp/romm/assets/3247106/ee1c96aa-e3a3-438b-ac18-9f26dad7b9db" width="780" alt="docker compose status">
 
 8. Run `docker ps -f name=romm` to verify that the containers are running
 9. Open a web browser and navigate to `http://localhost:8080`, where you should be greeted with the RomM setup page
@@ -77,26 +79,26 @@ Now that we have everything gathered, we can begin getting your instance set up!
 
 ## Configure
 
-Now that the container is running, we will configure it by importing your roms
+Now that the container is running, we will configure it by importing your ROMs
 
-#### Uploading Your Roms via Web Interface
+### Uploading Your ROMs via Web Interface
 
-This method is certainly viable, but not recommended if you have a lot of roms and/or multiple platforms. It is good for adding after the fact as your collection grows, but wouldn't be recommended for the first set up, nor for multi-file roms
+This method is certainly viable, but not recommended if you have a lot of ROMs and/or multiple platforms. It is good for adding after the fact as your collection grows, but wouldn't be recommended for the first set up, nor for multi-file ROMs
 
 1. Log into RomM with your user credentials
-2. Navigate to _Library_ -> _Upload roms_
-3. Select the platform, then click _ADD ROMS_ and select the roms you want to upload in the file selector that appears
-4. Click _UPLOAD_ to begin uploading the roms
-5. Repeat for all the roms/platforms you have
+2. Navigate to _Library_ -> _Upload ROMs_
+3. Select the platform, then click _ADD ROMs_ and select the ROMs you want to upload in the file selector that appears
+4. Click _UPLOAD_ to begin uploading the ROMs
+5. Repeat for all the `roms/platforms` you have
 
-<img src="https://github.com/rommapp/romm/assets/3247106/3e398e7a-d653-472c-9f11-82b2f0b52840" width="780">
+<img src="https://github.com/rommapp/romm/assets/3247106/3e398e7a-d653-472c-9f11-82b2f0b52840" width="780" alt="upload dialog">
 
-#### Importing Your Roms via Scanner
+#### Importing Your ROMs via Scanner
 
 This method is generally the fastest and recommended for first time setup
 
 1. Stop your RomM instance. `docker compose down` if you are in the terminal and directory containing the docker-compose file, otherwise `docker stop romm`
-2. Go to the library folder created by RomM, set in the docker-compose file under _:/romm/library_ and create a folder named `roms`
+2. Go to the library folder created by RomM, set in the docker-compose file under `:/romm/library` and create a folder named `roms`
 3. Copy your platform folders/rom files into the `roms` folder you created
 4. Start the RomM instance back up. `docker compose up -d` if you are in the terminal and directory containing the docker-compose file, otherwise `docker start romm`
 5. Log into RomM with your user credentials

@@ -1,4 +1,4 @@
-Here are some basic configurations for popular reverse proxies. Some installations may require modifications to config options not listed below.
+Here are some basic configurations for popular reverse proxies. Some installations may require modifications to configuration options not listed below.
 
 ## Caddy
 
@@ -90,17 +90,17 @@ server {
 
 Items marked with ❗ are important to set, as RomM may not correctly otherwise!
 
-#### ⚡ Details
+### ⚡ Details
 
-- Domain Names: `romm.mydomain.com` (replace mydomain with your own)\* Scheme: `http`
-- Forward Hostname/IP: <device IP> (like 192.168.X.X)
+- Domain Names: `romm.example.com` (replace example with your own)\* Scheme: `http`
+- Forward Hostname/IP: device IP (like 192.168.X.X)
 - Forward Port: `8080`
 - Cache Assets: `off`
 - Block Common Exploits: `on`
 - Websockets Support: `on` ❗
 - Access List: -
 
-#### 🛡️ SSL
+### 🛡️ SSL
 
 Strongly recommended, but only required if you plan to secure your site (use HTTPS)
 
@@ -108,14 +108,14 @@ Strongly recommended, but only required if you plan to secure your site (use HTT
 - Force SSL: `on`
 - HTTP/2 Support: `on`
 - HSTS Enabled: `off`
-- Email Address for Let's Encrypt: <your email address>
+- Email Address for Let's Encrypt: your email address
 - I Agree to the TOS: `on`
 
-#### ⚙️ Advanced
+### ⚙️ Advanced
 
-Custom Nginx Confguration ❗
+Custom Nginx Configuration ❗
 
-```
+```yaml
 proxy_max_temp_file_size 0;
 ```
 
@@ -127,7 +127,7 @@ proxy_max_temp_file_size 0;
 
 ### Using a configuration document
 
-```yml
+```yaml
 http:
     romsdomainse:
         entryPoints:
@@ -150,7 +150,7 @@ services:
 
 ### Using labels in docker compose
 
-```yml
+```yaml
 labels:
     - "traefik.enable=true"
     - "traefik.http.services.romm.loadbalancer.server.port=8080"

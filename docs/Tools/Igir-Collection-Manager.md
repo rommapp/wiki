@@ -1,4 +1,4 @@
-[Igir](https://igir.io/) is a zero-setup ROM collection manager that sorts, filters, extracts or archives, patches, and reports on collections of any size on any OS. It can be used to rename your roms to match the RomM database, and to move them into a new directory structure.
+[Igir](https://igir.io/) is a zero-setup ROM collection manager that sorts, filters, extracts or archives, patches, and reports on collections of any size on any OS. It can be used to rename your ROMs to match the RomM database, and to move them into a new directory structure.
 
 ## Setup
 
@@ -6,11 +6,11 @@
 
 The directory structure is important for running the bulk ROM renaming script. Before running the bulk ROM renaming script, set up your directories as follows:
 
-```
+```md
 .
-├── dats/              # DAT files from no-intro.org
-├── roms/              # Original ROM collection
-├── roms-unverified/   # Working copy of ROMs
+├── dats/ # DAT files from no-intro.org
+├── roms/ # Original ROM collection
+├── roms-unverified/ # Working copy of ROMs
 └── igir-romm-cleanup.sh
 ```
 
@@ -73,11 +73,11 @@ chmod a+x igir-romm-cleanup.sh
 
 ### Run the script
 
-Run the script. It will generate a new output directory named `roms-verified`, moving the files from `roms-unverified` if its checksum matches any of the known checksums in the DAT files provided. Any roms not identified will remain in the `roms-unverified` directory.
+Run the script. It will generate a new output directory named `roms-verified`, moving the files from `roms-unverified` if its checksum matches any of the known checksums in the DAT files provided. Any ROMs not identified will remain in the `roms-unverified` directory.
 
 ### Manually move over remaining files
 
-The script may not identify all of the roms in your input directory. You can choose to migrate them over manually:
+The script may not identify all of the ROMs in your input directory. You can choose to migrate them over manually:
 
 ```bash
 npx -y igir@latest \
@@ -87,11 +87,11 @@ npx -y igir@latest \
   --dir-mirror
 ```
 
-This will move your roms from the input to the output directory, preserving the subdirectory structure. It also cleans up file extensions in the process.
+This will move your ROMs from the input to the output directory, preserving the subdirectory structure. It also cleans up file extensions in the process.
 
 ### Reorganize multi-disc games
 
-The Igir script will move games that have multiple discs to separate folders. This can confuse Romm's game detection, and those games need to be reorganized into single folders with many discs.
+The Igir script will move games that have multiple discs to separate folders. This can confuse RomM's game detection, and those games need to be reorganized into single folders with many discs.
 
 To do this enter your platform directory, such as `ps` or `psx` and run the following:
 

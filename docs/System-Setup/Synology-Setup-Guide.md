@@ -44,7 +44,7 @@ mkdir -p /volume1/docker/mariadb-romm
 
 ### 2. Network Bridge Setup
 
-Create a new network bridge named `rommbridge` following standard Docker networking practices. You can use [Dr. Frankensteins' guide](https://drfrankenstein.co.uk/step-3-setting-up-a-docker-bridge-network-in-container-manager/) for reference.
+Create a new network bridge named `rommbridge` following standard Docker networking practices. You can use [this guide](https://drfrankenstein.co.uk/step-3-setting-up-a-docker-bridge-network-in-container-manager/) for reference.
 
 ### 3. Key Generation
 
@@ -61,21 +61,22 @@ Save the output - you'll need it for the `ROMM_AUTH_SECRET_KEY` in your configur
 
 #### API Integration Setup
 
-RomM currecntly supports 3 metadata sources: IGDB, MobyGames and SteamGridDB. Follow the dedicated wiki page for [API key generation](../Getting-Started/Generate-API-Keys.md) to set up your API keys. We recommend setting up IGDG at the minimum.
+RomM currently supports 3 metadata sources: IGDB, MobyGames and SteamGridDB. Follow the dedicated wiki page for [API key generation](../Getting-Started/Generate-API-Keys.md) to set up your API keys. We recommend setting up IGDG at the minimum.
 
 ### 4. MariaDB Configuration
 
-#### Important Notes
-
-- This guide uses a dedicated MariaDB container for RomM, but you can use an existing MariaDB instance if preferred
-- We're using MariaDB version 10.7 for compatibility
-- The container uses port 3306 internally, mapped to 3309 externally
-- A simplified health check is implemented for stability
+<!-- prettier-ignore -->
+!!! important
+    - This guide uses a dedicated MariaDB container for RomM, but you can use an existing MariaDB instance if preferred
+    - We're using MariaDB version 10.7 for compatibility
+    - The container uses port 3306 internally, mapped to 3309 externally
+    - A simplified health check is implemented for stability
 
 ### 5. Docker Compose Configuration
 
 Create a `docker-compose.yml` file with the following content:
 
+<!-- prettier-ignore -->
 ???+ example "Example Docker Compose"
     ``` yaml
     --8<-- "synology.docker-compose.yml"
@@ -88,12 +89,12 @@ Create a `docker-compose.yml` file with the following content:
 3. Monitor progress through container logs
 4. Access RomM through your browser at `http://your-server-ip:7676`
 
-## Important Notes
-
-- Replace placeholder values (UIDs, GIDs, passwords, API keys) with your own
-- Ensure proper permissions on all created directories
-- Back up your configuration after successful setup
-- Monitor logs during initial startup for any errors
+<!-- prettier-ignore -->
+!!! important
+    - Replace placeholder values (UIDs, GIDs, passwords, API keys) with your own
+    - Ensure proper permissions on all created directories
+    - Back up your configuration after successful setup
+    - Monitor logs during initial startup for any errors
 
 ## Troubleshooting
 
@@ -104,4 +105,4 @@ Create a `docker-compose.yml` file with the following content:
 
 ## Contributing
 
-This guide is an abbridged version of ChopFoo's original guide. If you have any suggestions or improvements, please submit a pull request to the [RomM wiki](https://github.com/rommapp/wiki).
+This guide is an abridged version of ChopFoo's original guide. If you have any suggestions or improvements, please submit a pull request to the [RomM wiki](https://github.com/rommapp/wiki).

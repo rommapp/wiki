@@ -22,7 +22,7 @@ OIDC (OpenID Connect) is an identity layer built on top of OAuth2. While OAuth2 
 
 ### Step 1: Install and Configure Pocket ID
 
-Before setting up the OIDC client, ensure that Pocket ID is installed and running by following the [github.](https://github.com/stonith404/pocket-id#setup)
+Before setting up the OIDC client, ensure that Pocket ID is installed and running by following the [setup guide](https://github.com/stonith404/pocket-id#setup).
 
 ### Step 2: Add a client
 
@@ -32,7 +32,7 @@ Once you have logged in and configured a PassKey you now need to create an OIDC 
 - Go to OIDC Client
 - Click Add OIDC Client
     - Name: RomM
-    - Callback URLs: https://{yoururl}/api/oauth/openid
+    - Callback URLs: `https://{host}/api/oauth/openid`
 - Click Save
 - Stay on this page, you will be shown your client secret only THIS time.
 
@@ -44,7 +44,7 @@ To enable OIDC authentication in RomM, you need to set the following environment
 - `OIDC_PROVIDER`: The lowercase name of the provider (`pocketid`).
 - `OIDC_CLIENT_ID`: The client ID copied from the Pocket ID application
 - `OIDC_CLIENT_SECRET`: The client secret that is showing within your Pocket ID application.
-- `OIDC_REDIRECT_URI`: The redirect URI configured in the Pocket ID provider, in the format `https://{yoururl}/api/oauth/openid`.
+- `OIDC_REDIRECT_URI`: The redirect URI configured in the Pocket ID provider, in the format `https://{host}/api/oauth/openid`.
 - `OIDC_SERVER_APPLICATION_URL`: The authorization URL for you Pocket ID instance, e.g. `https://id.host.local/authorize`.
 
 ### Step 4: Set your Email in RomM

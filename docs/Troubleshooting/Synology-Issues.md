@@ -7,7 +7,7 @@ description: Troubleshooting issues when using Synology products
 
 We have noticed recently a spate of access denied on Synology systems via Portainer or even docker manager. The ErrNo13 is directly related to Synology and it is a simple permission issue. To fix it please do the following:
 
-1. Make sure SSH is enabled on your synology product. Refer to here if it is not [Enable SSH](https://kb.synology.com/en-uk/DSM/tutorial/How_to_login_to_DSM_with_root_permission_via_SSH_Telnet)
+1. Make sure SSH is enabled on your Synology product. Refer to here if it is not [Enable SSH](https://kb.synology.com/en-uk/DSM/tutorial/How_to_login_to_DSM_with_root_permission_via_SSH_Telnet)
 2. Connect to SSH and login as your admin username and password (Same login used to login to DSM web page)
 3. Take a note on your user:group you can find this by typing ID when logged into SSH.
 4. Type the following commands in the SSH window.

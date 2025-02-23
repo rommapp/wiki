@@ -54,7 +54,7 @@ An app in Authentik represents the external service (in our case RomM) that will
     - Go to the "Applications" section in the admin interface.
       ![Applications](../resources/authentik/5-applications.png)
 2. **Create a New Application**:
-    - Click on “Create” and configure the app settings: - **Name**: Provide a recognizable name (e.g., "RomM"). - **Slug**: Create a unique identifier for the app (e.g., "romm"). - **Provider**: Link the app to the previously created provider, "RomM OIDC Provider".
+    - Click on “Create” and configure the app settings: - **Name**: Provide a recognizable name (e.g., "RomM"). - **Slug**: Create a unique identifier for the app (e.g., `romm`). - **Provider**: Link the app to the previously created provider, "RomM OIDC Provider".
       ![New application](../resources/authentik/6-new-application.png)
 3. **Click Create**.
 

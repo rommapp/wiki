@@ -17,7 +17,7 @@ search:
     - [Custom Platforms](Platforms-and-Players/Custom-Platforms.md)
     - [EmulatorJS Player](Platforms-and-Players/EmulatorJS-Player.md)
     - [RuffleRS Player](Platforms-and-Players/RuffleRS-Player.md)
-- System Setup Gudies
+- System Setup Guides
     - [Unraid Setup](System-Setup/Unraid-Setup-Guide.md)
     - [Synology Setup](System-Setup/Synology-Setup-Guide.md)
     - [TrueNAS Setup](System-Setup/TrueNAS-Setup-Guide.md)
@@ -35,7 +35,7 @@ search:
     - [Scanning Issues](Troubleshooting/Scanning-Issues.md)
     - [Authentication Issues](Troubleshooting/Authentication-Issues.md)
     - [Synology Issues](Troubleshooting/Synology-Issues.md)
-    - [Miscellanous Issues](Troubleshooting/Miscellaneous-Troubleshooting.md)
+    - [Miscellaneous Issues](Troubleshooting/Miscellaneous-Troubleshooting.md)
 - Miscellaneous
     - [FAQs](Miscellaneous/FAQs.md)
     - [Branding Guidelines](Miscellaneous/Brand-Guidelines.md)
