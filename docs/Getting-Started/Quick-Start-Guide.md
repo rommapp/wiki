@@ -73,7 +73,7 @@ Now that we have everything gathered, we can begin getting your instance set up!
 ```asciinema-player
 {
     "file": "resources/asciinema/quick-start-docker-compose.cast",
-    "title": "RoM docker compose install",
+    "title": "RomM docker compose install",
     "preload": true,
     "loop": true,
     "auto_play": true,
