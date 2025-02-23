@@ -15,4 +15,5 @@ dependencies = [
     "mkdocs-material>=9.6.5",
     "mkdocs-video>=1.5.0",
     "pillow>=11.1.0",
+    "mkdocs-asciinema-player>=0.16.0"
 ]

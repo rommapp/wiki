@@ -41,6 +41,7 @@ theme:
 plugins:
     - search
     - mkdocs-video
+    - asciinema-player
     - social:
           cards_layout_options:
               font_family: Roboto
