@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# Navigate to the /romm.wiki directory
-cd "$(dirname "$0")/romm.wiki" || exit 1
+# Navigate to the /docs directory
+cd "$(dirname "$0")/docs" || exit 1
 
 # Check if the origin remote exists, if not add it
 git remote | grep -q "^origin$" || git remote add origin git@github.com:rommapp/romm.wiki.git
