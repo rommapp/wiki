@@ -48,7 +48,6 @@ plugins:
     - asciinema-player
     - social:
           cards_layout_options:
-              image: docs/resources/romm/social-preview.png
               font_family: Roboto
               background_color: "#371f69"
               color: "#ede5f8"
