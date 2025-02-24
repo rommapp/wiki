@@ -51,7 +51,7 @@ plugins:
               font_family: Roboto
               background_color: "#371f69"
               color: "#ede5f8"
-              logo: docs/resources/romm/isotipo.png
+              logo: docs/assets/romm/romm-logo.pngg
               title: RomM Docs
               description: Your beautiful, powerful, self-hosted rom manager
     - glightbox:
