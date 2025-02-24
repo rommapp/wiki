@@ -1,8 +1,8 @@
 name: Build and Deploy MkDocs Site
 
-on:
-    push:
-        branches: [main]
+# on:
+#     push:
+#         branches: [main]
 
 concurrency:
     group: "pages"
