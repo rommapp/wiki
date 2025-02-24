@@ -8,8 +8,8 @@ repo_name: rommapp/romm
 edit_uri: "edit/main/docs/"
 theme:
     name: material
-    logo: resources/romm/logo.png
-    favicon: resources/romm/logo.png
+    logo: resources/romm/isotipo.png
+    favicon: resources/romm/isotipo.png
     features:
         - navigation.instant
         - navigation.instant.prefetch
@@ -48,10 +48,11 @@ plugins:
     - asciinema-player
     - social:
           cards_layout_options:
+              image: docs/resources/romm/social-preview.png
               font_family: Roboto
               background_color: "#371f69"
               color: "#ede5f8"
-              logo: docs/assets/images/romm-logo.png
+              logo: docs/resources/romm/isotipo.png
               title: RomM Docs
               description: Your beautiful, powerful, self-hosted rom manager
     - glightbox:

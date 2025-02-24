@@ -3,7 +3,7 @@ We’ve put together some guidelines for those anyone who wants to use our name 
 ## The Logo
 
 <div align="center">
-  <img src="../../resources/romm/logo.svg" height="180px" width="180px" alt="RomM logo">
+  <img src="../../resources/romm/isotipo.svg" width="180px" height="auto" alt="romm isotipo">
   <br />
   <br />
 
@@ -15,27 +15,27 @@ The logo should always be used in its standard colors:
       <th>Hex Code</th>
     </tr>
     <tr>
-      <td><img src="../../resources/romm/371f69.png" height="16px" width="16px" alt="#371f69"></td>
+      <td><img src="../../resources/romm/brand_guidelines/371f69.png" height="16px" width="16px" alt="#371f69"></td>
       <td>#371f69</td>
     </tr>
     <tr>
-      <td><img src="../../resources/romm/553e98.png" height="16px" width="16px" alt="#553e98"></td>
+      <td><img src="../../resources/romm/brand_guidelines/553e98.png" height="16px" width="16px" alt="#553e98"></td>
       <td>#553e98</td>
     </tr>
     <tr>
-      <td><img src="../../resources/romm/ede5f8.png" height="16px" width="16px" alt="#ede5f8"></td>
+      <td><img src="../../resources/romm/brand_guidelines/ede5f8.png" height="16px" width="16px" alt="#ede5f8"></td>
       <td>#ede5f8</td>
     </tr>
     <tr>
-      <td><img src="../../resources/romm/bea4e1.png" height="16px" width="16px" alt="#bea4e1"></td>
+      <td><img src="../../resources/romm/brand_guidelines/bea4e1.png" height="16px" width="16px" alt="#bea4e1"></td>
       <td>#bea4e1</td>
     </tr>
     <tr>
-      <td><img src="../../resources/romm/e6c7a7.png" height="16px" width="16px" alt="#e6c7a7"></td>
+      <td><img src="../../resources/romm/brand_guidelines/e6c7a7.png" height="16px" width="16px" alt="#e6c7a7"></td>
       <td>#e6c7a7</td>
     </tr>
     <tr>
-      <td><img src="../../resources/romm/e1a38d.png" height="16px" width="16px" alt="#e1a38d"></td>
+      <td><img src="../../resources/romm/brand_guidelines/e1a38d.png" height="16px" width="16px" alt="#e1a38d"></td>
       <td>#e1a38d</td>
     </tr>
   </table>

@@ -5,8 +5,8 @@ hide:
     - toc
 ---
 
-<img src="./resources/romm/logo.svg" height="200px" width="200px" alt="romm isotipo">
-<img src="./resources/romm/logotype.png" height="250px" width="250px" alt="romm logotipo" style="margin-top: 10px;">
+<img src="./resources/romm/isotipo.svg" height="200px" width="200px" alt="romm isotipo">
+<img src="./resources/romm/logotipo.png" height="250px" width="250px" alt="romm logotipo" style="margin-top: 10px;">
 /// caption
 Welcome to the **RomM Project**, the premier self-hosted, open source ROM manager.
 ///
