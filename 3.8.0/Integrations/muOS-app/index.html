@@ -12,13 +12,13 @@
         <meta name="author" content="RomM Team">
       
       
-        <link rel="canonical" href="https://docs.romm.app/3.8.0/System-Setup/Synology-Setup-Guide/">
+        <link rel="canonical" href="https://docs.romm.app/3.8.0/Integrations/muOS-app/">
       
       
-        <link rel="prev" href="../Unraid-Setup-Guide/">
+        <link rel="prev" href="../Playnite-plugin/">
       
       
-        <link rel="next" href="../TrueNAS-Setup-Guide/">
+        <link rel="next" href="../../Troubleshooting/Scanning-Issues/">
       
       
       <link rel="icon" href="../../resources/romm/isotipo.png">
@@ -26,7 +26,7 @@
     
     
       
-        <title>Synology Setup - RomM</title>
+        <title>muOS app - RomM</title>
       
     
     
@@ -69,11 +69,11 @@
       
         <meta  property="og:type"  content="website" >
       
-        <meta  property="og:title"  content="Synology Setup - RomM" >
+        <meta  property="og:title"  content="muOS app - RomM" >
       
         <meta  property="og:description"  content="Your beautiful, powerful, self-hosted rom manager" >
       
-        <meta  property="og:image"  content="https://docs.romm.app/3.8.0/assets/images/social/System-Setup/Synology-Setup-Guide.png" >
+        <meta  property="og:image"  content="https://docs.romm.app/3.8.0/assets/images/social/Integrations/muOS-app.png" >
       
         <meta  property="og:image:type"  content="image/png" >
       
@@ -81,15 +81,15 @@
       
         <meta  property="og:image:height"  content="630" >
       
-        <meta  property="og:url"  content="https://docs.romm.app/3.8.0/System-Setup/Synology-Setup-Guide/" >
+        <meta  property="og:url"  content="https://docs.romm.app/3.8.0/Integrations/muOS-app/" >
       
         <meta  name="twitter:card"  content="summary_large_image" >
       
-        <meta  name="twitter:title"  content="Synology Setup - RomM" >
+        <meta  name="twitter:title"  content="muOS app - RomM" >
       
         <meta  name="twitter:description"  content="Your beautiful, powerful, self-hosted rom manager" >
       
-        <meta  name="twitter:image"  content="https://docs.romm.app/3.8.0/assets/images/social/System-Setup/Synology-Setup-Guide.png" >
+        <meta  name="twitter:image"  content="https://docs.romm.app/3.8.0/assets/images/social/Integrations/muOS-app.png" >
       
     
     
@@ -121,7 +121,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#prerequisites" class="md-skip">
+        <a href="#setup" class="md-skip">
           Skip to content
         </a>
       
@@ -160,7 +160,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Synology Setup
+              muOS app
             
           </span>
         </div>
@@ -628,10 +628,8 @@
       
   
   
-    
   
   
-  
     
     
       
@@ -646,11 +644,11 @@
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
         
           
           <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
@@ -665,7 +663,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             System Setup Guides
@@ -679,7 +677,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Unraid-Setup-Guide/" class="md-nav__link">
+      <a href="../../System-Setup/Unraid-Setup-Guide/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -698,29 +696,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Synology Setup
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../System-Setup/Synology-Setup-Guide/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -730,177 +709,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#prerequisites" class="md-nav__link">
-    <span class="md-ellipsis">
-      Prerequisites
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#setup-process" class="md-nav__link">
-    <span class="md-ellipsis">
-      Setup Process
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Setup Process">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-folder-structure-setup" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. Folder Structure Setup
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="1. Folder Structure Setup">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#rom-storage-folders" class="md-nav__link">
-    <span class="md-ellipsis">
-      ROM Storage Folders
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#rom-library-structure" class="md-nav__link">
-    <span class="md-ellipsis">
-      ROM Library Structure
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#docker-data-folders" class="md-nav__link">
-    <span class="md-ellipsis">
-      Docker Data Folders
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-network-bridge-setup" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. Network Bridge Setup
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-key-generation" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. Key Generation
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="3. Key Generation">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#authentication-key" class="md-nav__link">
-    <span class="md-ellipsis">
-      Authentication Key
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#api-integration-setup" class="md-nav__link">
-    <span class="md-ellipsis">
-      API Integration Setup
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#4-mariadb-configuration" class="md-nav__link">
-    <span class="md-ellipsis">
-      4. MariaDB Configuration
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#5-docker-compose-configuration" class="md-nav__link">
-    <span class="md-ellipsis">
-      5. Docker Compose Configuration
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#6-initial-launch" class="md-nav__link">
-    <span class="md-ellipsis">
-      6. Initial Launch
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#troubleshooting" class="md-nav__link">
-    <span class="md-ellipsis">
-      Troubleshooting
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#contributing" class="md-nav__link">
-    <span class="md-ellipsis">
-      Contributing
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -913,7 +721,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../TrueNAS-Setup-Guide/" class="md-nav__link">
+      <a href="../../System-Setup/TrueNAS-Setup-Guide/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -935,7 +743,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Tinfoil-Integration/" class="md-nav__link">
+      <a href="../../System-Setup/Tinfoil-Integration/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1240,8 +1048,10 @@
       
   
   
+    
   
   
+  
     
     
       
@@ -1252,11 +1062,11 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" checked>
         
           
           <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
@@ -1271,7 +1081,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_8">
             <span class="md-nav__icon md-icon"></span>
             Integrations
@@ -1285,7 +1095,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Integrations/Playnite-plugin/" class="md-nav__link">
+      <a href="../Playnite-plugin/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1304,10 +1114,29 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../Integrations/muOS-app/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    muOS app
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -1317,6 +1146,33 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      Setup
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1588,153 +1444,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#prerequisites" class="md-nav__link">
+  <a href="#setup" class="md-nav__link">
     <span class="md-ellipsis">
-      Prerequisites
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#setup-process" class="md-nav__link">
-    <span class="md-ellipsis">
-      Setup Process
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Setup Process">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-folder-structure-setup" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. Folder Structure Setup
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="1. Folder Structure Setup">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#rom-storage-folders" class="md-nav__link">
-    <span class="md-ellipsis">
-      ROM Storage Folders
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#rom-library-structure" class="md-nav__link">
-    <span class="md-ellipsis">
-      ROM Library Structure
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#docker-data-folders" class="md-nav__link">
-    <span class="md-ellipsis">
-      Docker Data Folders
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-network-bridge-setup" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. Network Bridge Setup
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-key-generation" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. Key Generation
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="3. Key Generation">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#authentication-key" class="md-nav__link">
-    <span class="md-ellipsis">
-      Authentication Key
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#api-integration-setup" class="md-nav__link">
-    <span class="md-ellipsis">
-      API Integration Setup
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#4-mariadb-configuration" class="md-nav__link">
-    <span class="md-ellipsis">
-      4. MariaDB Configuration
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#5-docker-compose-configuration" class="md-nav__link">
-    <span class="md-ellipsis">
-      5. Docker Compose Configuration
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#6-initial-launch" class="md-nav__link">
-    <span class="md-ellipsis">
-      6. Initial Launch
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#troubleshooting" class="md-nav__link">
-    <span class="md-ellipsis">
-      Troubleshooting
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#contributing" class="md-nav__link">
-    <span class="md-ellipsis">
-      Contributing
+      Setup
     </span>
   </a>
   
@@ -1759,146 +1471,16 @@
   
 
 
-  <h1>Synology Setup</h1>
+  <h1>muOS app</h1>
 
-<div><h2 id="prerequisites">Prerequisites</h2>
-<p>This guide assumes you're familiar with Docker and have basic knowledge of server management. You'll need:</p>
-<ul>
-<li>A Synology NAS or similar server</li>
-<li>Docker installed</li>
-<li>Basic command line knowledge</li>
-<li>Access to manage network settings</li>
-</ul>
-<h2 id="setup-process">Setup Process</h2>
-<h3 id="1-folder-structure-setup">1. Folder Structure Setup</h3>
-<h4 id="rom-storage-folders">ROM Storage Folders</h4>
-<p>Create the following directory structure for game assets and configuration:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>mkdir<span class="w"> </span>-p<span class="w"> </span>/volume1/data/media/games/assets
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>mkdir<span class="w"> </span>-p<span class="w"> </span>/volume1/data/media/games/config
-</code></pre></div>
-<h4 id="rom-library-structure">ROM Library Structure</h4>
-<p>RomM requires a <strong>very specific folder structure</strong> for rom files:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>mkdir<span class="w"> </span>-p<span class="w"> </span>/volume1/data/media/games/library/roms
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>mkdir<span class="w"> </span>-p<span class="w"> </span>/volume1/data/media/games/library/bios
-</code></pre></div>
-<p>Note: For supported platforms and their specific folder names, refer to the <a href="../../Platforms-and-Players/Supported-Platforms/">official RomM wiki</a>.</p>
-<h4 id="docker-data-folders">Docker Data Folders</h4>
-<p>Create these folders for project and container data:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>mkdir<span class="w"> </span>-p<span class="w"> </span>/volume1/docker/romm-project/
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>mkdir<span class="w"> </span>-p<span class="w"> </span>/volume1/docker/romm/resources
-<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>mkdir<span class="w"> </span>-p<span class="w"> </span>/volume1/docker/romm/redis-data
-<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>mkdir<span class="w"> </span>-p<span class="w"> </span>/volume1/docker/mariadb-romm
-</code></pre></div>
-<h3 id="2-network-bridge-setup">2. Network Bridge Setup</h3>
-<p>Create a new network bridge named <code>rommbridge</code> following standard Docker networking practices. You can use <a href="https://drfrankenstein.co.uk/step-3-setting-up-a-docker-bridge-network-in-container-manager/">this guide</a> for reference.</p>
-<h3 id="3-key-generation">3. Key Generation</h3>
-<h4 id="authentication-key">Authentication Key</h4>
-<p>Generate your authentication key using:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>openssl<span class="w"> </span>rand<span class="w"> </span>-hex<span class="w"> </span><span class="m">32</span>
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>&gt;<span class="w"> </span>03a054b6ca27e0107c5eed552ea66bacd9f3a2a8a91e7595cd462a593f9ecd09
-</code></pre></div>
-<p>Save the output - you'll need it for the <code>ROMM_AUTH_SECRET_KEY</code> in your configuration.</p>
-<h4 id="api-integration-setup">API Integration Setup</h4>
-<p>RomM currently supports 3 metadata sources: IGDB, MobyGames and SteamGridDB. Follow the dedicated wiki page for <a href="../../Getting-Started/Generate-API-Keys/">API key generation</a> to set up your API keys. We recommend setting up IGDG at the minimum.</p>
-<h3 id="4-mariadb-configuration">4. MariaDB Configuration</h3>
-<!-- prettier-ignore -->
-<div class="admonition important">
-<p class="admonition-title">Important</p>
-<ul>
-<li>This guide uses a dedicated MariaDB container for RomM, but you can use an existing MariaDB instance if preferred</li>
-<li>We're using MariaDB version 10.7 for compatibility</li>
-<li>The container uses port 3306 internally, mapped to 3309 externally</li>
-<li>A simplified health check is implemented for stability</li>
-</ul>
+<div><div align="center">
+    <a class="glightbox" href="../../resources/romm/integrations/muos.svg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="../../resources/romm/integrations/muos.svg" height="200px" width="200px" alt="romm[muos] isotipo"></a>
 </div>
-<h3 id="5-docker-compose-configuration">5. Docker Compose Configuration</h3>
-<p>Create a <code>docker-compose.yml</code> file with the following content:</p>
-<!-- prettier-ignore -->
-<details class="example" open="open">
-<summary>Example Docker Compose</summary>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="s">"3"</span>
-<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
-<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="nt">volumes</span><span class="p">:</span>
-<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="w">    </span><span class="nt">mysql_data</span><span class="p">:</span>
-<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>
-<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="nt">services</span><span class="p">:</span>
-<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="w">    </span><span class="nt">romm</span><span class="p">:</span>
-<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="w">        </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rommapp/romm:latest</span>
-<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="w">        </span><span class="nt">container_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">romm</span>
-<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="w">        </span><span class="nt">restart</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">unless-stopped</span>
-<a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="w">        </span><span class="nt">environment</span><span class="p">:</span>
-<a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a><span class="w">            </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DB_HOST=romm-db</span>
-<a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a><span class="w">            </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DB_NAME=romm</span><span class="w"> </span><span class="c1"># Should match MARIADB_DATABASE in mariadb</span>
-<a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a><span class="w">            </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DB_USER=romm-user</span><span class="w"> </span><span class="c1"># Should match MARIADB_USER in mariadb</span>
-<a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a><span class="w">            </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DB_PASSWD=</span><span class="w"> </span><span class="c1"># Should match MARIADB_PASSWORD in mariadb</span>
-<a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a><span class="w">            </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ROMM_AUTH_SECRET_KEY=</span><span class="w"> </span><span class="c1"># Generate a key with `openssl rand -hex 32`</span>
-<a id="__codelineno-4-17" name="__codelineno-4-17" href="#__codelineno-4-17"></a><span class="w">            </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">IGDB_CLIENT_ID=</span><span class="w"> </span><span class="c1"># Generate an ID and SECRET in IGDB</span>
-<a id="__codelineno-4-18" name="__codelineno-4-18" href="#__codelineno-4-18"></a><span class="w">            </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">IGDB_CLIENT_SECRET=</span><span class="w"> </span><span class="c1"># https://api-docs.igdb.com/#account-creation</span>
-<a id="__codelineno-4-19" name="__codelineno-4-19" href="#__codelineno-4-19"></a><span class="w">            </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">MOBYGAMES_API_KEY=</span><span class="w"> </span><span class="c1"># https://www.mobygames.com/info/api/</span>
-<a id="__codelineno-4-20" name="__codelineno-4-20" href="#__codelineno-4-20"></a><span class="w">            </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">STEAMGRIDDB_API_KEY=</span><span class="w"> </span><span class="c1"># https://github.com/rommapp/romm/wiki/Generate-API-Keys#steamgriddb</span>
-<a id="__codelineno-4-21" name="__codelineno-4-21" href="#__codelineno-4-21"></a><span class="w">        </span><span class="nt">volumes</span><span class="p">:</span>
-<a id="__codelineno-4-22" name="__codelineno-4-22" href="#__codelineno-4-22"></a><span class="w">            </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/volume1/docker/romm/resources:/romm/resources</span>
-<a id="__codelineno-4-23" name="__codelineno-4-23" href="#__codelineno-4-23"></a><span class="w">            </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/volume1/docker/romm/redis-data:/redis-data</span>
-<a id="__codelineno-4-24" name="__codelineno-4-24" href="#__codelineno-4-24"></a><span class="w">            </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/volume1/data/media/games/library:/romm/library</span>
-<a id="__codelineno-4-25" name="__codelineno-4-25" href="#__codelineno-4-25"></a><span class="w">            </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/volume1/data/media/games/assets:/romm/assets</span>
-<a id="__codelineno-4-26" name="__codelineno-4-26" href="#__codelineno-4-26"></a><span class="w">            </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/volume1/data/media/games/config:/romm/config</span>
-<a id="__codelineno-4-27" name="__codelineno-4-27" href="#__codelineno-4-27"></a><span class="w">        </span><span class="nt">ports</span><span class="p">:</span>
-<a id="__codelineno-4-28" name="__codelineno-4-28" href="#__codelineno-4-28"></a><span class="w">            </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">7676:8080</span>
-<a id="__codelineno-4-29" name="__codelineno-4-29" href="#__codelineno-4-29"></a><span class="w">        </span><span class="nt">network_mode</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rommbridge</span>
-<a id="__codelineno-4-30" name="__codelineno-4-30" href="#__codelineno-4-30"></a><span class="w">        </span><span class="nt">depends_on</span><span class="p">:</span>
-<a id="__codelineno-4-31" name="__codelineno-4-31" href="#__codelineno-4-31"></a><span class="w">            </span><span class="nt">romm-db</span><span class="p">:</span>
-<a id="__codelineno-4-32" name="__codelineno-4-32" href="#__codelineno-4-32"></a><span class="w">                </span><span class="nt">condition</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">service_healthy</span>
-<a id="__codelineno-4-33" name="__codelineno-4-33" href="#__codelineno-4-33"></a><span class="w">                </span><span class="nt">restart</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
-<a id="__codelineno-4-34" name="__codelineno-4-34" href="#__codelineno-4-34"></a>
-<a id="__codelineno-4-35" name="__codelineno-4-35" href="#__codelineno-4-35"></a><span class="w">    </span><span class="nt">mariadb-romm</span><span class="p">:</span>
-<a id="__codelineno-4-36" name="__codelineno-4-36" href="#__codelineno-4-36"></a><span class="w">        </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mariadb:latest</span>
-<a id="__codelineno-4-37" name="__codelineno-4-37" href="#__codelineno-4-37"></a><span class="w">        </span><span class="nt">container_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mariadb-romm</span>
-<a id="__codelineno-4-38" name="__codelineno-4-38" href="#__codelineno-4-38"></a><span class="w">        </span><span class="nt">restart</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">unless-stopped</span>
-<a id="__codelineno-4-39" name="__codelineno-4-39" href="#__codelineno-4-39"></a><span class="w">        </span><span class="nt">environment</span><span class="p">:</span>
-<a id="__codelineno-4-40" name="__codelineno-4-40" href="#__codelineno-4-40"></a><span class="w">            </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">MARIADB_ROOT_PASSWORD=</span><span class="w"> </span><span class="c1"># Use a unique, secure password</span>
-<a id="__codelineno-4-41" name="__codelineno-4-41" href="#__codelineno-4-41"></a><span class="w">            </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">MARIADB_DATABASE=romm</span>
-<a id="__codelineno-4-42" name="__codelineno-4-42" href="#__codelineno-4-42"></a><span class="w">            </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">MARIADB_USER=romm-user</span>
-<a id="__codelineno-4-43" name="__codelineno-4-43" href="#__codelineno-4-43"></a><span class="w">            </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">MARIADB_PASSWORD=</span>
-<a id="__codelineno-4-44" name="__codelineno-4-44" href="#__codelineno-4-44"></a><span class="w">        </span><span class="nt">ports</span><span class="p">:</span>
-<a id="__codelineno-4-45" name="__codelineno-4-45" href="#__codelineno-4-45"></a><span class="w">            </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">3309:3306</span>
-<a id="__codelineno-4-46" name="__codelineno-4-46" href="#__codelineno-4-46"></a><span class="w">        </span><span class="nt">network_mode</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rommbridge</span>
-<a id="__codelineno-4-47" name="__codelineno-4-47" href="#__codelineno-4-47"></a><span class="w">        </span><span class="nt">volumes</span><span class="p">:</span>
-<a id="__codelineno-4-48" name="__codelineno-4-48" href="#__codelineno-4-48"></a><span class="w">            </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/volume1/docker/mariadb-romm:/var/lib/mysql</span>
-<a id="__codelineno-4-49" name="__codelineno-4-49" href="#__codelineno-4-49"></a><span class="w">        </span><span class="nt">healthcheck</span><span class="p">:</span>
-<a id="__codelineno-4-50" name="__codelineno-4-50" href="#__codelineno-4-50"></a><span class="w">            </span><span class="nt">test</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">"CMD"</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="s">"healthcheck.sh"</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="s">"--connect"</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="s">"--innodb_initialized"</span><span class="p p-Indicator">]</span>
-<a id="__codelineno-4-51" name="__codelineno-4-51" href="#__codelineno-4-51"></a><span class="w">            </span><span class="nt">start_period</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">30s</span>
-<a id="__codelineno-4-52" name="__codelineno-4-52" href="#__codelineno-4-52"></a><span class="w">            </span><span class="nt">start_interval</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">10s</span>
-<a id="__codelineno-4-53" name="__codelineno-4-53" href="#__codelineno-4-53"></a><span class="w">            </span><span class="nt">interval</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">10s</span>
-<a id="__codelineno-4-54" name="__codelineno-4-54" href="#__codelineno-4-54"></a><span class="w">            </span><span class="nt">timeout</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">5s</span>
-<a id="__codelineno-4-55" name="__codelineno-4-55" href="#__codelineno-4-55"></a><span class="w">            </span><span class="nt">retries</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">5</span>
-</code></pre></div>
-</details>
-<h3 id="6-initial-launch">6. Initial Launch</h3>
-<ol>
-<li>Start the containers using Docker Compose</li>
-<li><strong>Be patient!</strong> The container can take a few minutes to setup on first launch</li>
-<li>Monitor progress through container logs</li>
-<li>Access RomM through your browser at <code>http://your-server-ip:7676</code></li>
-</ol>
-<!-- prettier-ignore -->
-<div class="admonition important">
-<p class="admonition-title">Important</p>
-<ul>
-<li>Replace placeholder values (UIDs, GIDs, passwords, API keys) with your own</li>
-<li>Ensure proper permissions on all created directories</li>
-<li>Back up your configuration after successful setup</li>
-<li>Monitor logs during initial startup for any errors</li>
-</ul>
-</div>
-<h2 id="troubleshooting">Troubleshooting</h2>
-<ul>
-<li>If the web interface shows "page not found," wait for initial setup to complete</li>
-<li>For database connection issues, verify MariaDB container health status</li>
-<li>Check logs for both containers if experiencing issues</li>
-<li>Ensure all volumes are properly mounted with correct permissions</li>
-</ul>
-<h2 id="contributing">Contributing</h2>
-<p>This guide is an abridged version of ChopFoo's original guide. If you have any suggestions or improvements, please submit a pull request to the <a href="https://github.com/rommapp/wiki">RomM wiki</a>.</p></div>
+
+<p><a href="https://muos.dev">muOS</a> is a Custom Firmware (CFW) primarily for handheld devices. Configurable, themeable, friendly, easy-to-use.</p>
+<p>The <a href="https://github.com/rommapp/muos-app">muOS app</a> connects to your RomM instance and allows you to fetch games wirelessly from your Anbernic device.</p>
+<h2 id="setup">Setup</h2>
+<p>You can find the installation guide <a href="https://github.com/rommapp/muos-app?tab=readme-ov-file#installation" target="_blank">here</a>.</p></div>
 
 
 
@@ -1921,7 +1503,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2025-02-23T15:31:37+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2025-02-23</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2025-02-24T09:26:09+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2025-02-24</span>
   </span>
 
     
@@ -1931,7 +1513,7 @@
     <span class="md-icon" title="Created">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2025-01-13T01:16:59+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2025-01-13</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2025-02-24T09:26:09+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2025-02-24</span>
   </span>
 
     
@@ -1968,7 +1550,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../Unraid-Setup-Guide/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Unraid Setup">
+          <a href="../Playnite-plugin/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Playnite plugin">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1978,20 +1560,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Unraid Setup
+                Playnite plugin
               </div>
             </div>
           </a>
         
         
           
-          <a href="../TrueNAS-Setup-Guide/" class="md-footer__link md-footer__link--next" aria-label="Next: TrueNAS Setup">
+          <a href="../../Troubleshooting/Scanning-Issues/" class="md-footer__link md-footer__link--next" aria-label="Next: Scanning Issues">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                TrueNAS Setup
+                Scanning Issues
               </div>
             </div>
             <div class="md-footer__button md-icon">
