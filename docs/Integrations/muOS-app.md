@@ -2,9 +2,9 @@
     <img src="../../resources/romm/integrations/muos.svg" height="200px" width="200px" alt="romm[muos] isotipo">
 </div>
 
-[muOS](https://muos.dev) is a Custom Firmware (CFW) primarily for handheld devices. Configurable, themeable, friendly, easy-to-use.
+<a href="https://muos.dev" target="_blank">muOS</a> is a Custom Firmware (CFW) primarily for handheld devices. Configurable, themeable, friendly, easy-to-use.
 
-The [muOS app](https://github.com/rommapp/muos-app) connects to your RomM instance and allows you to fetch games wirelessly from your Anbernic device.
+The <a href="https://github.com/rommapp/muos-app" target="_blank">muOS app</a> connects to your RomM instance and allows you to fetch games wirelessly from your Anbernic device.
 
 ## Setup
 
