@@ -5,12 +5,6 @@ hide:
     - toc
 ---
 
-<script>
-    if (window.location.pathname === '/' || window.location.pathname === '/index.html') {
-        window.location.href = 'https://romm.app/latest';
-    }
-</script>
-
 <img src="./resources/romm/logotype.png" alt="RomM Logo">
 /// caption
 Welcome to the **RomM Project**, the premier self-hosted, open source ROM manager.
