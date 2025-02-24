@@ -31,6 +31,9 @@ search:
 - Maintenance
     - [Scheduled Tasks](Maintenance/Scheduled-Tasks.md)
     - [Upgrading to 3.0](Maintenance/Upgrading-to-3.0.md)
+- Integrations
+    - [Playnite plugin](Integrations/Playnite-plugin.md)
+    - [muOS app](Integrations/muOS-app.md)
 - Troubleshooting
     - [Scanning Issues](Troubleshooting/Scanning-Issues.md)
     - [Authentication Issues](Troubleshooting/Authentication-Issues.md)
