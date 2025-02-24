@@ -18,9 +18,16 @@ runtimes:
 lint:
     enabled:
         # - vale@3.9.5
+        - actionlint@1.7.7
+        - checkov@3.2.373
+        - oxipng@9.1.4
+        - svgo@3.3.2
+        - taplo@0.9.3
+        - vale@3.9.5
+        - yamllint@1.35.1
         - git-diff-check
         - markdownlint@0.44.0
-        - prettier@3.5.1
+        - prettier@3.5.2
         - trufflehog@3.88.12
 actions:
     enabled:
