@@ -35,7 +35,7 @@ uv sync --all-extras --dev
 Finally run the following command to serve the documentation from a local server:
 
 ```sh
-uv run mkdocs serve
+uv run mkdocs serve [-a ip:port] --livereload
 ```
 
 ## Contributing
