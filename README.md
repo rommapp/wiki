@@ -59,6 +59,16 @@ trunk fmt
 trunk check
 ```
 
+## Deploy
+
+We use [mike]() to build and deploy documentation versions. Manually deploy a version needs to update and push the specific version (or a new one if creating a new version) with the following command:
+
+```sh
+uv run mike deploy --push <version> [alias]
+```
+
+This will update the `gh-pages` branch and automatically deploys the version with the fix/update to https://docs.romm.app
+
 ## Social
 
 Join us on Discord, where you can ask questions, submit ideas, get help, showcase your collection, and discuss RomM with other users.
