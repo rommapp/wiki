@@ -102,6 +102,7 @@ extra:
           name: romm.app
     version:
         provider: mike
+        alias: true
 
 extra_css:
     - resources/css/theme.css
