@@ -1408,29 +1408,15 @@
 
   <h1>Introduction</h1>
 
-<html><head><script>
-    if (window.location.pathname === '/' || window.location.pathname === '/index.html') {
-        window.location.href = 'https://romm.app/latest';
-    }
-</script>
-
-<figure>
-<p><a class="glightbox" href="./resources/romm/logotype.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="./resources/romm/logotype.png" alt="RomM Logo"></a></p>
+<div><figure>
+<p><a class="glightbox" href="./resources/romm/logo.svg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="./resources/romm/logo.svg" height="200px" width="200px" alt="romm isotipo"></a>
+<a class="glightbox" href="./resources/romm/logotype.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="./resources/romm/logotype.png" height="250px" width="250px" alt="romm logotipo" style="margin-top: 10px;"></a></p>
 <figcaption>
 <p>Welcome to the <strong>RomM Project</strong>, the premier self-hosted, open source ROM manager.</p>
 </figcaption>
 </figure>
- <link href="assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
-    html.glightbox-open { overflow: initial; height: 100%; }
-    .gslide-title { margin-top: 0px; user-select: text; }
-    .gslide-desc { color: #666; user-select: text; }
-    .gslide-image img { background: white; }
-    .gscrollbar-fixer { padding-right: 15px; }
-    .gdesc-inner { font-size: 0.75rem; }
-    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
-    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
-    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="assets/javascripts/glightbox.min.js"></script></head><body><div style="text-align: center">
-<a href="https://romm.app">Website</a> | <a href="https://romm.app">Demo</a>
+<div style="text-align: center">
+<a href="https://romm.app" target="_blank">Website</a> | <a href="https://demo.romm.app" target="_blank">Demo</a>
 </div>
 
 <p>RomM (ROM Manager) allows you to scan, enrich, and browse your game collection with a clean and responsive interface. With support for multiple platforms, various naming schemes, and custom tags, RomM is a must-have for anyone who plays on emulators.</p>
@@ -1450,9 +1436,7 @@
     <a href="https://discord.gg/RGPJHNMMwJ">
         <a class="glightbox" href="https://invidget.switchblade.xyz/RGPJHNMMwJ" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="https://invidget.switchblade.xyz/RGPJHNMMwJ" alt="Join our Discord"></a>
     </a>
-</div><script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
-document$.subscribe(() => { lightbox.reload() });
-</script></body></html>
+</div></div>
 
 
 
@@ -1611,5 +1595,7 @@ document$.subscribe(() => { lightbox.reload() });
         <script src="js/asciinema-player.min.js"></script>
       
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>
