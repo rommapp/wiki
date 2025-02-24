@@ -1,20 +1,24 @@
-name: Build and Deploy MkDocs Site
+name: Build and Deploy Docs
 
-# on:
-#     push:
-#         branches: [main]
+on:
+    workflow_dispatch:
+        inputs:
+            version:
+                description: Version to publish
+                required: true
+                type: string
 
 concurrency:
-    group: "pages"
+    group: pages
     cancel-in-progress: true
 
 permissions:
-    contents: write
+    contents: read
     pages: write
     id-token: write
 
 jobs:
-    build:
+    deploy:
         runs-on: ubuntu-latest
         timeout-minutes: 10
         steps:
@@ -27,35 +31,15 @@ jobs:
               uses: astral-sh/setup-uv@v5
               with:
                   enable-cache: true
-                  cache-dependency-glob: "uv.lock"
+                  cache-dependency-glob: uv.lock
 
-            - name: "Set up Python"
+            - name: Set up Python
               uses: actions/setup-python@v5
               with:
-                  python-version-file: ".python-version"
+                  python-version-file: .python-version
 
             - name: Install dependencies
               run: uv sync --all-extras --dev
 
-            - name: Build Site
-              run: uv run mkdocs build
-
-            - name: Upload artifact
-              uses: actions/upload-pages-artifact@v3
-              with:
-                  path: ./site
-
-    deploy:
-        needs: build
-        runs-on: ubuntu-latest
-        timeout-minutes: 5
-
-        # Deploy to the github-pages environment
-        environment:
-            name: github-pages
-            url: ${{ steps.deployment.outputs.page_url }}
-
-        steps:
-            - name: Deploy to GitHub Pages
-              id: deployment
-              uses: actions/deploy-pages@v4
+            - name: Deploy with mike
+              run: uv run mike deploy --push ${{ github.event.inputs.version }} latest
