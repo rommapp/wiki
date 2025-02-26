@@ -11,11 +11,11 @@ This quick start guide will help you get a RomM instance up and running. It is s
 This guide will assume that you already have the following done, if not - stop here and come back when you do.
 
 - Docker and Docker Compose installed
-- OpenSSL installed (optional)
-- A Twitch account (optional)
+- A [Twitch](https://dev.twitch.tv) account (optional)
     - 2-factor authentication set up on your Twitch account
     - _This is required to get a developer account and an IGDB key_
-- A MobyGames account (optional)
+- A [Screenscraper](https://www.screenscraper.fr/) account (optional)
+- A [MobyGames](https://www.mobygames.com/) account (optional)
 - Your ROMs organized in the correct format
 
 <!-- prettier-ignore -->
@@ -24,7 +24,7 @@ This guide will assume that you already have the following done, if not - stop h
 
 ### Twitch and MobyGames API Keys
 
-Head over to [API key docs](../Getting-Started/Generate-API-Keys.md) to get your Twitch and/or MobyGames keys, then come back here
+Head over to [API key docs](../Getting-Started/Generate-API-Keys.md) to get your Twitch and/or Screenscraper and/or MobyGames keys, then come back here
 
 ### Generating Authentication Keys
 
