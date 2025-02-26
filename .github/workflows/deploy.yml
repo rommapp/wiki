@@ -48,11 +48,11 @@ jobs:
           git config --global user.email ${{ secrets.GIT_EMAIL }}
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
 
-      - name: Pull latest changes from gh-pages
+      - name: Pull latest changes
         run: |
-          git fetch origin gh-pages
-          git checkout gh-pages
-          git pull origin gh-pages
+          git fetch origin main
+          git checkout main
+          git pull origin main
 
       - name: Build the documentation
         run: uv run mike deploy --push ${{ github.event.inputs.version }} latest
