@@ -1,6 +1,2 @@
 # Prettier friendly markdownlint config (all formatting rules disabled)
 extends: markdownlint/style/prettier
-MD007:
-    indent: 4
-MD033: false
-MD041: false
