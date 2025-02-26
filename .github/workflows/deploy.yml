@@ -49,3 +49,5 @@ jobs:
 
       - name: Deploy with mike
         run: uv run mike deploy --push ${{ github.event.inputs.version }} latest
+        env:
+          GITHUB_TOKEN: ${{ secrets.DOCS_PAT }}
