@@ -47,6 +47,11 @@ jobs:
           git config --global user.name ${{ secrets.GIT_NAME }}
           git config --global user.email ${{ secrets.GIT_EMAIL }}
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
+          git fetch -a
+          git pull origin main
+          git checkout gh-pages
+          git pull origin gh-pages
+          git checkout main
 
       - name: Build the documentation
         run: uv run mike deploy --push ${{ github.event.inputs.version }} latest
