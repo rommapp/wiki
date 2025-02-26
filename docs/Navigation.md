@@ -31,11 +31,10 @@ search:
 - Maintenance
     - [Scheduled Tasks](Maintenance/Scheduled-Tasks.md)
     - [Upgrading to 3.0](Maintenance/Upgrading-to-3.0.md)
-- [Troubleshooting](Troubleshooting/index.md)
+- Troubleshooting
     - [Scanning Issues](Troubleshooting/Scanning-Issues.md)
     - [Authentication Issues](Troubleshooting/Authentication-Issues.md)
     - [Synology Issues](Troubleshooting/Synology-Issues.md)
     - [Miscellaneous Issues](Troubleshooting/Miscellaneous-Troubleshooting.md)
 - Miscellaneous
     - [FAQs](Miscellaneous/FAQs.md)
-    - [Branding Guidelines](Miscellaneous/Brand-Guidelines.md)

@@ -11,7 +11,8 @@ hide:
     }
 </script>
 
-<img src="./resources/romm/logotype.png" alt="RomM Logo">
+<img src="./resources/romm/logo.svg" height="200px" width="200px" alt="RomM logo">
+<img src="./resources/romm/logotype.png" height="250px" width="250px" alt="RomM word type" style="margin-top: 10px;">
 /// caption
 Welcome to the **RomM Project**, the premier self-hosted, open source ROM manager.
 ///
